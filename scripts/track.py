@@ -349,6 +349,7 @@ def analyze_with_gemini(
             "cuerpo": f["cuerpo"],
             "grupo": f["grupo"],
             "estado": f["estado"],
+            "solo_lista_reserva": bool(f["_raw_meta"].get("solo_lista_reserva", False)),
             "situacion_actual": f["situacion_actual"],
         }
         for f in fichas
@@ -358,6 +359,7 @@ def analyze_with_gemini(
 Tu tarea es analizar EN PROFUNDIDAD las novedades y documentos publicados hoy en los portales web, en el BOP de Las Palmas y en el BOC de Canarias.
 
 REGLAS OBLIGATORIAS:
+1. Si una ficha tiene "solo_lista_reserva": true, NO generes novedades ni actualizaciones salvo que se publique explícitamente la LISTA DE RESERVA.
 1. El campo "nuevo_estado" NO puede referirse nunca a la tarea del bot (PROHIBIDO usar "En seguimiento", "Vigilado", "Rastreando", etc.). Debe reflejar la FASE ADMINISTRATIVA REAL de la convocatoria, por ejemplo:
    - "A la espera del término del plazo de presentación de instancias"
    - "Publicada relación provisional de admitidos/excluidos; a la espera de lista definitiva"
@@ -443,20 +445,50 @@ def main() -> None:
     training_rules_md = (
         RULES_MD_FILE.read_text(encoding="utf-8") if RULES_MD_FILE.exists() else ""
     )
-    prev_state = load_json(STATE_FILE, {"hashes": {}, "novedades": []})
+    prev_state = load_json(STATE_FILE, {"hashes": {}, "novedades": [], "last_checked": {}})
     prev_hashes: dict[str, str] = prev_state.get("hashes", {})
+    prev_last_checked: dict[str, str] = prev_state.get("last_checked", {})
 
     sources = parse_webs_md()
     ficha_files = sorted(FICHAS_DIR.glob("*.md"))
     fichas = [parse_ficha(p) for p in ficha_files]
+    ficha_by_id = {f["id"]: f for f in fichas}
 
     source_statuses = []
     changed_sources = []
     bulletin_findings = []
     new_hashes = dict(prev_hashes)
+    new_last_checked = dict(prev_last_checked)
 
     for src in sources:
         url = src["url"]
+        linked_ficha = ficha_by_id.get(src["ficha"])
+        is_monthly = "mensual" in src["frecuencia"].lower() or (
+            linked_ficha and bool(linked_ficha["_raw_meta"].get("solo_lista_reserva", False))
+        )
+        last_chk_str = prev_last_checked.get(url, "")
+        if is_monthly and last_chk_str:
+            try:
+                days_since = (now_utc.date() - datetime.strptime(last_chk_str, "%Y-%m-%d").date()).days
+                if days_since < 30:
+                    source_statuses.append(
+                        {
+                            "nombre": src["nombre"],
+                            "ambito": src["ambito"],
+                            "url": url,
+                            "frecuencia": "Mensual (Lista de reserva)" if (linked_ficha and linked_ficha["_raw_meta"].get("solo_lista_reserva")) else src["frecuencia"],
+                            "ficha": src["ficha"],
+                            "http_status": 200,
+                            "estado_rastreo": "ok",
+                            "cambio_detectado": False,
+                            "ultima_comprobacion": f"{last_chk_str} (próxima en {30 - days_since}d)",
+                        }
+                    )
+                    continue
+            except ValueError:
+                pass
+
+        new_last_checked[url] = today_str
         status, ctype, content = fetch_url(url)
         ok = 200 <= status < 400 and len(content) > 0
         text_sample = ""
@@ -605,7 +637,10 @@ def main() -> None:
         "reglas_entrenamiento_url": "TRAINING_RULES.md",
     }
 
-    save_json(STATE_FILE, {"hashes": new_hashes, "novedades": dedup_nov})
+    save_json(
+        STATE_FILE,
+        {"hashes": new_hashes, "novedades": dedup_nov, "last_checked": new_last_checked},
+    )
     save_json(DASHBOARD_FILE, dashboard_payload)
     # Also copy dashboard.json to docs/data/dashboard.json so GitHub Pages serves it cleanly
     save_json(ROOT_DIR / "docs" / "data" / "dashboard.json", dashboard_payload)
