@@ -229,12 +229,39 @@ function renderFuentes(fuentes) {
     .join("");
 }
 
-function buildStopTrackingUrl(p) {
-  const title = encodeURIComponent(`[Baja de proceso] Dejar de seguir: ${p.titulo}`);
+function getIncursoMap() {
+  try {
+    return JSON.parse(localStorage.getItem("buscaopos_incurso") || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function setIncursoState(id, isActive) {
+  const map = getIncursoMap();
+  map[id] = isActive;
+  localStorage.setItem("buscaopos_incurso", JSON.stringify(map));
+}
+
+function updateSyncBajasBtn(procesos) {
+  const btn = document.getElementById("sync-incurso-btn");
+  if (!btn) return;
+  const map = getIncursoMap();
+  const desactivados = (procesos || []).filter((p) => map[p.id] === false);
+  if (!desactivados.length) {
+    btn.style.display = "none";
+    return;
+  }
+  const title = encodeURIComponent(`[Baja de procesos] Desactivar ${desactivados.length} proceso(s)`);
+  const listTxt = desactivados
+    .map((p) => `- \`${p.id}\` — ${p.titulo} (${p.organismo})`)
+    .join("\n");
   const body = encodeURIComponent(
-    `### Proceso a excluir del seguimiento\n- **ID**: \`${p.id}\`\n- **Organismo**: ${p.organismo}\n- **Portal**: ${p.url_portal}\n\n### Motivo\n- [ ] Examen suspendido / no presentado\n- [ ] Proceso finalizado / otro motivo\n\n*(Nota: mantener la web activa en \`webs.md\` para futuras convocatorias).*`
+    `### Procesos en los que ya no estoy incurso (\`activo: false\`)\n${listTxt}\n\n*(Mantener las webs correspondientes activas en \`webs.md\` para futuras convocatorias).*`
   );
-  return `${REPO_URL}/issues/new?labels=training-feedback&title=${title}&body=${body}`;
+  btn.href = `${REPO_URL}/issues/new?labels=training-feedback&title=${title}&body=${body}`;
+  btn.textContent = `📤 Sincronizar bajas (${desactivados.length})`;
+  btn.style.display = "inline-flex";
 }
 
 function renderResumenProcesos(procesos) {
@@ -244,22 +271,88 @@ function renderResumenProcesos(procesos) {
     tbody.innerHTML = `<tr><td colspan="4" class="muted">No hay procesos activos registrados.</td></tr>`;
     return;
   }
+  const map = getIncursoMap();
   tbody.innerHTML = procesos
-    .map(
-      (p) => `
-      <tr>
+    .map((p) => {
+      const checked = map[p.id] !== false;
+      return `
+      <tr class="${checked ? "" : "row-inactive"}" data-row-id="${escapeHtml(p.id)}">
         <td><strong>${escapeHtml(p.administracion)}</strong><br><span class="muted">${escapeHtml(p.organismo)}</span></td>
         <td>${escapeHtml(p.titulo)} <span class="badge badge-muted">${escapeHtml(p.grupo)}</span></td>
         <td>${escapeHtml(p.estado)}</td>
-        <td><a class="btn btn-outline" href="${buildStopTrackingUrl(p)}" target="_blank" rel="noopener">🚫 No seguir</a></td>
+        <td>
+          <div class="switch-wrap">
+            <label class="switch" title="Activar o desactivar seguimiento si estás incurso">
+              <input type="checkbox" data-incurso-toggle="${escapeHtml(p.id)}" ${checked ? "checked" : ""} />
+              <span class="slider"></span>
+            </label>
+            <span class="muted" data-incurso-label="${escapeHtml(p.id)}">${checked ? "Incurso" : "Baja"}</span>
+          </div>
+        </td>
       </tr>
-    `
-    )
+    `;
+    })
     .join("");
+
+  tbody.querySelectorAll("[data-incurso-toggle]").forEach((input) => {
+    input.addEventListener("change", () => {
+      const id = input.getAttribute("data-incurso-toggle");
+      const active = input.checked;
+      setIncursoState(id, active);
+      const row = tbody.querySelector(`[data-row-id="${id}"]`);
+      const lbl = tbody.querySelector(`[data-incurso-label="${id}"]`);
+      if (row) row.classList.toggle("row-inactive", !active);
+      if (lbl) lbl.textContent = active ? "Incurso" : "Baja";
+      updateSyncBajasBtn(procesos);
+    });
+  });
+
+  updateSyncBajasBtn(procesos);
+}
+
+function initNewProcessModal() {
+  const modal = document.getElementById("new-process-modal");
+  const openBtn = document.getElementById("open-new-process-btn");
+  const closeBtn = document.getElementById("new-process-close");
+  const cancelBtn = document.getElementById("new-process-cancel");
+  const form = document.getElementById("new-process-form");
+  if (!modal || !openBtn || !form) return;
+
+  openBtn.addEventListener("click", () => modal.showModal());
+  closeBtn?.addEventListener("click", () => modal.close());
+  cancelBtn?.addEventListener("click", () => modal.close());
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const cuerpo = document.getElementById("np-cuerpo").value;
+    const [nivel, admin] = document.getElementById("np-admin").value.split("|");
+    const organismo = document.getElementById("np-organismo").value.trim();
+    const titulo = document.getElementById("np-titulo").value.trim();
+    const web = document.getElementById("np-web").value.trim();
+
+    const issueTitle = encodeURIComponent(`[Nuevo proceso] [${cuerpo}] ${titulo} (${organismo})`);
+    const issueBody = encodeURIComponent(
+      `### Alta de nuevo proceso selectivo\n` +
+      `- **Cuerpo / Grupo**: \`${cuerpo}\`\n` +
+      `- **Administración**: ${admin} (Nivel ${nivel})\n` +
+      `- **Organismo convocante**: ${organismo}\n` +
+      `- **Proceso / Plaza**: ${titulo}\n` +
+      `- **Web de la administración**: ${web}\n\n` +
+      `Por favor, añade esta fuente a \`webs.md\` y crea su ficha en \`fichas/\`.`
+    );
+    window.open(
+      `${REPO_URL}/issues/new?labels=training-feedback&title=${issueTitle}&body=${issueBody}`,
+      "_blank",
+      "noopener"
+    );
+    form.reset();
+    modal.close();
+  });
 }
 
 async function init() {
   initTheme();
+  initNewProcessModal();
   document.getElementById("modal-close").addEventListener("click", () => {
     document.getElementById("process-modal").close();
   });

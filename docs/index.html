@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Buscaopos · Panel de Seguimiento de Oposiciones</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <header class="topbar">
@@ -18,6 +18,7 @@
       </div>
       <div class="topbar-actions">
         <span id="last-updated" class="badge badge-muted">Cargando...</span>
+        <button id="open-new-process-btn" class="btn btn-outline" type="button">➕ Añadir proceso</button>
         <a
           class="btn btn-outline"
           href="https://github.com/ozonito/buscaopos/blob/main/TRAINING_RULES.md"
@@ -31,7 +32,6 @@
           target="_blank"
           rel="noopener"
         >🛠️ Reportar fallo / Entrenar</a>
-        <button id="theme-toggle" class="btn btn-icon" aria-label="Cambiar tema" title="Cambiar tema">🌓</button>
       </div>
     </div>
   </header>
@@ -116,9 +116,12 @@
 
     <!-- Relación breve y concisa de procesos para revisión y bajas -->
     <section class="panel" aria-label="Relación rápida de procesos">
-      <div class="panel-header">
-        <h2>📋 Relación rápida de procesos (revisión y bajas)</h2>
-        <span class="muted">Si suspendiste o quieres dejar de seguir un proceso sin desactivar la web</span>
+      <div class="panel-header" style="display:flex;justify-content:space-between;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+        <div>
+          <h2>📋 Relación rápida de procesos (revisión y bajas)</h2>
+          <span class="muted">Activa o desactiva si estás incurso en el proceso (la web seguirá vigilada para futuras convocatorias)</span>
+        </div>
+        <a id="sync-incurso-btn" class="btn btn-outline" target="_blank" rel="noopener" style="display:none;">📤 Sincronizar bajas con el bot</a>
       </div>
       <div class="table-wrap">
         <table class="sources-table">
@@ -127,7 +130,7 @@
               <th>Administración / Organismo</th>
               <th>Proceso (Grupo)</th>
               <th>Estado actual</th>
-              <th>Acción</th>
+              <th>Incurso</th>
             </tr>
           </thead>
           <tbody id="resumen-procesos-tbody"></tbody>
@@ -156,10 +159,61 @@
     </div>
   </dialog>
 
+  <!-- Modal para añadir un nuevo proceso selectivo -->
+  <dialog id="new-process-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <span class="badge">Nueva convocatoria</span>
+          <h2>➕ Añadir nuevo proceso selectivo</h2>
+          <p class="muted">Incorpora un proceso de una web que aún no está rastreada en Buscaopos.</p>
+        </div>
+        <button id="new-process-close" class="btn btn-icon" aria-label="Cerrar" type="button">✕</button>
+      </div>
+      <form id="new-process-form" class="modal-body">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="np-cuerpo">Cuerpo / Grupo</label>
+            <select id="np-cuerpo" class="select" required>
+              <option value="A1">A1</option>
+              <option value="A2">A2</option>
+              <option value="C1">C1</option>
+              <option value="C2">C2</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="np-admin">Administración convocante</label>
+            <select id="np-admin" class="select" required>
+              <option value="1|Gobierno de Canarias">1. Gobierno de Canarias</option>
+              <option value="2|Cabildo de Gran Canaria">2. Cabildo de Gran Canaria (y organismos dependientes)</option>
+              <option value="3|Ayuntamientos y Otros">3. Ayuntamientos y Otros</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="np-organismo">Organismo / Entidad concreta</label>
+            <input id="np-organismo" class="input" type="text" placeholder="Ej.: Ayuntamiento de Telde, Cabildo de Gran Canaria..." required />
+          </div>
+          <div class="form-field">
+            <label for="np-titulo">Nombre del proceso / plaza</label>
+            <input id="np-titulo" class="input" type="text" placeholder="Ej.: Técnico/a de Administración General" required />
+          </div>
+          <div class="form-field">
+            <label for="np-web">Web de la administración / enlace de la convocatoria</label>
+            <input id="np-web" class="input" type="url" placeholder="https://..." required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="new-process-cancel" class="btn btn-outline" type="button">Cancelar</button>
+          <button class="btn btn-primary" type="submit">📤 Enviar a Buscaopos (GitHub)</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
   <footer class="footer container">
     <p>Buscaopos · Seguimiento automatizado con GitHub Actions &amp; GitHub Pages · <a href="https://github.com/ozonito/buscaopos" target="_blank" rel="noopener">Repositorio</a></p>
   </footer>
 
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
