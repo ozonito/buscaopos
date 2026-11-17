@@ -229,6 +229,35 @@ function renderFuentes(fuentes) {
     .join("");
 }
 
+function buildStopTrackingUrl(p) {
+  const title = encodeURIComponent(`[Baja de proceso] Dejar de seguir: ${p.titulo}`);
+  const body = encodeURIComponent(
+    `### Proceso a excluir del seguimiento\n- **ID**: \`${p.id}\`\n- **Organismo**: ${p.organismo}\n- **Portal**: ${p.url_portal}\n\n### Motivo\n- [ ] Examen suspendido / no presentado\n- [ ] Proceso finalizado / otro motivo\n\n*(Nota: mantener la web activa en \`webs.md\` para futuras convocatorias).*`
+  );
+  return `${REPO_URL}/issues/new?labels=training-feedback&title=${title}&body=${body}`;
+}
+
+function renderResumenProcesos(procesos) {
+  const tbody = document.getElementById("resumen-procesos-tbody");
+  if (!tbody) return;
+  if (!procesos || !procesos.length) {
+    tbody.innerHTML = `<tr><td colspan="4" class="muted">No hay procesos activos registrados.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = procesos
+    .map(
+      (p) => `
+      <tr>
+        <td><strong>${escapeHtml(p.administracion)}</strong><br><span class="muted">${escapeHtml(p.organismo)}</span></td>
+        <td>${escapeHtml(p.titulo)} <span class="badge badge-muted">${escapeHtml(p.grupo)}</span></td>
+        <td>${escapeHtml(p.estado)}</td>
+        <td><a class="btn btn-outline" href="${buildStopTrackingUrl(p)}" target="_blank" rel="noopener">🚫 No seguir</a></td>
+      </tr>
+    `
+    )
+    .join("");
+}
+
 async function init() {
   initTheme();
   document.getElementById("modal-close").addEventListener("click", () => {
@@ -247,6 +276,7 @@ async function init() {
     renderProcesos();
     renderNovedades(dashboardData.novedades);
     renderFuentes(dashboardData.fuentes);
+    renderResumenProcesos(dashboardData.procesos);
   } catch (err) {
     document.getElementById("procesos-container").innerHTML =
       `<div class="panel"><p class="muted">Error cargando data/dashboard.json: ${escapeHtml(err.message)}</p></div>`;

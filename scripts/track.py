@@ -548,7 +548,11 @@ def main() -> None:
     dedup_nov = dedup_nov[:50]
 
     # Reload fichas after potential AI updates and sort strictly by Administration Priority
-    fichas_final = [parse_ficha(p) for p in sorted(FICHAS_DIR.glob("*.md"))]
+    fichas_final = [
+        parse_ficha(p)
+        for p in sorted(FICHAS_DIR.glob("*.md"))
+        if parse_ficha(p)["_raw_meta"].get("activo", True) is not False
+    ]
     fichas_final.sort(key=lambda x: (x["nivel_prioridad"], x["organismo"], x["titulo"]))
 
     # Remove internal fields before serializing
