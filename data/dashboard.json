@@ -1,0 +1,305 @@
+{
+  "ultima_actualizacion": "2026-11-17T16:04:03Z",
+  "fecha_legible": "2026-11-17",
+  "ia_activa": false,
+  "resumen": {
+    "total_procesos": 4,
+    "total_fuentes": 17,
+    "fuentes_ok": 15,
+    "novedades_recientes": 0
+  },
+  "procesos": [
+    {
+      "id": "gobcan_aft_a1_2026",
+      "archivo": "fichas/gobcan_aft_a1_2026.md",
+      "titulo": "Administración Tributaria y Financiera (AFT) · Turno Libre 2026",
+      "administracion": "Gobierno de Canarias",
+      "nivel_prioridad": 1,
+      "organismo": "Gobierno de Canarias · Dirección General de la Función Pública",
+      "cuerpo": "Cuerpo Superior de Administradores · Escala de Administración Tributaria y Financiera",
+      "grupo": "A1",
+      "sistema": "Turno Libre",
+      "estado": "En seguimiento",
+      "url_portal": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/acceso/convocatorias-en-curso/2026/Acceso_libre/ficha/ADMINISTRACION-TRIBUTARIA-Y-FINANCIERA-Turno-Libre/",
+      "keywords": [
+        "Administración Tributaria y Financiera",
+        "AFT",
+        "aft_a112l26",
+        "Cuerpo Superior de Administradores"
+      ],
+      "ultima_revision": "2026-11-17",
+      "descripcion": "Proceso selectivo de acceso libre para el ingreso en la Escala de Administración Tributaria y Financiera (Subgrupo A1) de la Administración Pública de la Comunidad Autónoma de Canarias.",
+      "historial": [
+        "**2026-11-17**: Ficha inicializada en Buscaopos para seguimiento diario automático en el portal de Función Pública y BOC."
+      ],
+      "situacion_actual": "Convocatoria en curso registrada en el portal de Función Pública del Gobierno de Canarias (Turno Libre 2026). Pendiente de primera comprobación automática diaria del portal y del BOC para extraer el último hito publicado."
+    },
+    {
+      "id": "autgc_tecnico_gestion_administrativa",
+      "archivo": "fichas/autgc_tecnico_gestion_administrativa.md",
+      "titulo": "Técnico/a de Gestión Administrativa y Digital · AUTGC",
+      "administracion": "Cabildo de Gran Canaria",
+      "nivel_prioridad": 2,
+      "organismo": "Autoridad Única del Transporte de Gran Canaria (AUTGC)",
+      "cuerpo": "Técnico/a de Gestión Administrativa y Digital",
+      "grupo": "A1 / A2",
+      "sistema": "Proceso selectivo",
+      "estado": "En seguimiento",
+      "url_portal": "https://ferrocarrilesgrancanaria.sedelectronica.es/info.0",
+      "keywords": [
+        "Autoridad Única del Transporte",
+        "AUTGC",
+        "Gestión Administrativa y Digital",
+        "ferrocarrilesgrancanaria"
+      ],
+      "ultima_revision": "2026-11-17",
+      "descripcion": "Proceso selectivo para plaza/puesto de Técnico/a de Gestión Administrativa y Digital en la Autoridad Única del Transporte de Gran Canaria (organismo vinculado al Cabildo de Gran Canaria).",
+      "historial": [
+        "**2026-11-17**: Ficha inicializada en Buscaopos a partir de `webs.md`."
+      ],
+      "situacion_actual": "En vigilancia diaria en la sede electrónica de la AUTGC y en el BOP de Las Palmas para detectar cualquier novedad, requerimiento o publicación de listas y pruebas."
+    },
+    {
+      "id": "cabildo_gc_procesos_vigilados",
+      "archivo": "fichas/cabildo_gc_procesos_vigilados.md",
+      "titulo": "Convocatorias Vigiladas · Cabildo de Gran Canaria",
+      "administracion": "Cabildo de Gran Canaria",
+      "nivel_prioridad": 2,
+      "organismo": "Cabildo de Gran Canaria",
+      "cuerpo": "Cuerpos Técnicos A1 / A2 / C1 (4 procesos vigilados)",
+      "grupo": "A1 / A2 / C1",
+      "sistema": "Turno Libre / Concurso-Oposición",
+      "estado": "En seguimiento",
+      "url_portal": "https://cabildo.grancanaria.com/ciu/empleo-publico",
+      "keywords": [
+        "Cabildo de Gran Canaria",
+        "empleo público",
+        "técnico",
+        "administración general",
+        "admitidos"
+      ],
+      "ultima_revision": "2026-11-17",
+      "descripcion": "Seguimiento de las convocatorias de empleo público del Cabildo de Gran Canaria (grupos A1, A2 y C1). Según la evolución de cada cuerpo, se desglosarán en fichas independientes cuando se publiquen nuevos actos en el BOP de Las Palmas o en el portal del Cabildo.",
+      "historial": [
+        "**2026-11-17**: Ficha inicializada en Buscaopos a partir de `webs.md` (4 procesos vigilados)."
+      ],
+      "situacion_actual": "Portal en vigilancia diaria para detectar nuevas publicaciones de listas de admitidos/excluidos, tribunales, fechas de examen y resoluciones en el BOP de Las Palmas y en la sede del Cabildo."
+    },
+    {
+      "id": "ulpgc_a1_escala_tecnica",
+      "archivo": "fichas/ulpgc_a1_escala_tecnica.md",
+      "titulo": "Escala Técnica (A1) · ULPGC Funcionario TL",
+      "administracion": "Ayuntamientos y Otros",
+      "nivel_prioridad": 3,
+      "organismo": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+      "cuerpo": "Escala Técnica de Gestión / Administración (Subgrupo A1)",
+      "grupo": "A1",
+      "sistema": "Turno Libre",
+      "estado": "En seguimiento",
+      "url_portal": "https://www.ulpgc.es/spersonal-pas/convocatoriasdepromocioni",
+      "keywords": [
+        "ULPGC",
+        "Escala Técnica",
+        "Personal de Administración y Servicios",
+        "PAS"
+      ],
+      "ultima_revision": "2026-11-17",
+      "descripcion": "Convocatoria de acceso libre para la Escala Técnica (Subgrupo A1) del Personal de Administración y Servicios (PAS) funcionario de la Universidad de Las Palmas de Gran Canaria.",
+      "historial": [
+        "**2026-11-17**: Ficha inicializada en Buscaopos a partir de `webs.md`."
+      ],
+      "situacion_actual": "En seguimiento diario del portal de Personal de Administración y Servicios de la ULPGC y del BOC para comprobar resoluciones, listas de admitidos, fechas de ejercicios y calificaciones."
+    }
+  ],
+  "novedades": [],
+  "fuentes": [
+    {
+      "nombre": "Boletín Oficial de Canarias (BOC)",
+      "ambito": "Boletín Autonómico",
+      "url": "https://www.gobiernodecanarias.org/boc/",
+      "frecuencia": "Diario (Lunes a Viernes)",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "AFT · Administración Tributaria y Financiera",
+      "ambito": "Funcionario TL (acceso libre)",
+      "url": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/acceso/convocatorias-en-curso/2026/Acceso_libre/ficha/ADMINISTRACION-TRIBUTARIA-Y-FINANCIERA-Turno-Libre/",
+      "frecuencia": "Periódico",
+      "ficha": "gobcan_aft_a1_2026",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Boletín Oficial de la Provincia (BOP)",
+      "ambito": "Boletín Provincial",
+      "url": "https://www.boplaspalmas.net/nbop2/index.php",
+      "frecuencia": "Lunes, Miércoles y Viernes",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Cabildo de Gran Canaria",
+      "ambito": "Portal de Empleo Público",
+      "url": "https://cabildo.grancanaria.com/ciu/empleo-publico",
+      "frecuencia": "Periódico",
+      "ficha": "cabildo_gc_procesos_vigilados",
+      "http_status": 403,
+      "estado_rastreo": "error",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Autoridad Única del Transporte de Gran Canaria",
+      "ambito": "Técnico/a de Gestión Administrativa y Digital",
+      "url": "https://ferrocarrilesgrancanaria.sedelectronica.es/info.0",
+      "frecuencia": "Periódico",
+      "ficha": "autgc_tecnico_gestion_administrativa",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Ayuntamiento de Las Palmas de Gran Canaria",
+      "ambito": "Convocatorias en Curso",
+      "url": "https://www.laspalmasgc.es/es/ayuntamiento/empleo-publico/convocatorias-en-curso/",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Ayuntamiento de San Bartolomé de Tirajana",
+      "ambito": "Portal de Empleo Público",
+      "url": "https://www.maspalomas.com/oposicionesyempleo",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Ayuntamiento de Teror",
+      "ambito": "Funcionario TL",
+      "url": "https://teror.sedelectronica.es/board/9753e838-f59b-11de-b600-00237da12c6a/",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Ayuntamiento de Santa Lucía",
+      "ambito": "Funcionario",
+      "url": "https://www.santaluciagc.com/empleo_publico/convocatorias-para-cubrir-plazas-en-propiedad/",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Turismo LPA (Ayto)",
+      "ambito": "Laboral Fijo",
+      "url": "https://turismolpa.com/recursos-humanos/",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "ULPGC (Funcionario TL)",
+      "ambito": "Funcionario TL",
+      "url": "https://www.ulpgc.es/spersonal-pas/convocatoriasdepromocioni",
+      "frecuencia": "Periódico",
+      "ficha": "ulpgc_a1_escala_tecnica",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "ULPGC (Pers. Laboral Fijo)",
+      "ambito": "Pers. Laboral Fijo",
+      "url": "https://www.ulpgc.es/spersonal-pas/personallaboralfijo",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Audiencia de Cuentas de Canarias",
+      "ambito": "Convocatorias en Curso",
+      "url": "https://acuentascanarias.org/empleo-publico/",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Puertos de Las Palmas",
+      "ambito": "Convocatorias en Curso",
+      "url": "https://www.palmasport.es/es/informacion-publica/ofertas-de-empleo/",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 0,
+      "estado_rastreo": "error",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Valora Gestión Tributaria",
+      "ambito": "Portal de Empleo Público",
+      "url": "https://www.valoragt.com/empleo",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "AEAT (Agencia Tributaria)",
+      "ambito": "Estatal",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/trabajar-agencia-tributaria.html",
+      "frecuencia": "Periódico",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    },
+    {
+      "nombre": "Boletín Estatal (PAG)",
+      "ambito": "Boletín Nacional / Recopilatorio",
+      "url": "https://administracion.gob.es/pag_Home/empleoPublico/boletin.html",
+      "frecuencia": "Semanal (Miércoles)",
+      "ficha": "—",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T16:04:03Z"
+    }
+  ],
+  "reglas_entrenamiento_url": "TRAINING_RULES.md"
+}

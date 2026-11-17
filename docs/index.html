@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscaopos · Panel de Seguimiento de Oposiciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <span class="brand-icon">⚖️</span>
+        <div>
+          <h1>Buscaopos</h1>
+          <p class="subtitle">Panel único de procesos selectivos · Gran Canaria &amp; Canarias</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <span id="last-updated" class="badge badge-muted">Cargando...</span>
+        <a
+          class="btn btn-outline"
+          href="https://github.com/ozonito/buscaopos/blob/main/TRAINING_RULES.md"
+          target="_blank"
+          rel="noopener"
+          title="Ver reglas de entrenamiento actuales"
+        >🧠 Reglas</a>
+        <a
+          class="btn btn-primary"
+          href="https://github.com/ozonito/buscaopos/issues/new?template=training_feedback.md&labels=training-feedback&title=%5BEntrenamiento%5D+Fallo+o+mejora+detectada"
+          target="_blank"
+          rel="noopener"
+        >🛠️ Reportar fallo / Entrenar</a>
+        <button id="theme-toggle" class="btn btn-icon" aria-label="Cambiar tema" title="Cambiar tema">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- KPIs -->
+    <section class="stats-grid" aria-label="Resumen general">
+      <div class="stat-card">
+        <span class="stat-label">Procesos activos</span>
+        <strong id="stat-procesos" class="stat-value">—</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Fuentes vigiladas</span>
+        <strong id="stat-fuentes" class="stat-value">—</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Novedades recientes</span>
+        <strong id="stat-novedades" class="stat-value">—</strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Análisis IA</span>
+        <strong id="stat-ia" class="stat-value">—</strong>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters-bar" aria-label="Filtros">
+      <input
+        type="search"
+        id="search-input"
+        class="input"
+        placeholder="Buscar por organismo, cuerpo, grupo o situación..."
+      />
+      <select id="filter-admin" class="select" aria-label="Filtrar por administración">
+        <option value="all">Todas las administraciones (por prioridad)</option>
+        <option value="1">1. Gobierno de Canarias</option>
+        <option value="2">2. Cabildo de Gran Canaria</option>
+        <option value="3">3. Ayuntamientos y Otros</option>
+      </select>
+      <select id="filter-grupo" class="select" aria-label="Filtrar por grupo">
+        <option value="all">Todos los grupos</option>
+        <option value="A1">Grupo A1</option>
+        <option value="A2">Grupo A2</option>
+        <option value="C1">Grupo C1</option>
+      </select>
+    </section>
+
+    <!-- Procesos ordenados por importancia de Administración -->
+    <section id="procesos-container" class="sections-stack" aria-label="Procesos selectivos">
+      <div class="loading">Cargando procesos selectivos...</div>
+    </section>
+
+    <!-- Novedades BOP / BOC / Portales -->
+    <section class="panel" aria-label="Novedades recientes">
+      <div class="panel-header">
+        <h2>🔔 Novedades en BOP Las Palmas, BOC y Portales</h2>
+      </div>
+      <div id="novedades-list" class="novedades-list"></div>
+    </section>
+
+    <!-- Fuentes Monitoreadas -->
+    <section class="panel" aria-label="Fuentes monitoreadas">
+      <div class="panel-header">
+        <h2>🌐 Fuentes de Monitoreo Activas (<code>webs.md</code>)</h2>
+        <span class="muted">Comprobación automática diaria</span>
+      </div>
+      <div class="table-wrap">
+        <table class="sources-table">
+          <thead>
+            <tr>
+              <th>Organismo / Fuente</th>
+              <th>Ámbito</th>
+              <th>Frecuencia</th>
+              <th>Estado</th>
+              <th>Enlace</th>
+            </tr>
+          </thead>
+          <tbody id="fuentes-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de detalle de proceso -->
+  <dialog id="process-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <span id="modal-admin-badge" class="badge"></span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-subtitle" class="muted"></p>
+        </div>
+        <button id="modal-close" class="btn btn-icon" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+      <div class="modal-footer">
+        <a id="modal-portal-link" class="btn btn-outline" target="_blank" rel="noopener">🔗 Abrir portal oficial</a>
+        <a id="modal-report-link" class="btn btn-primary" target="_blank" rel="noopener">🛠️ Reportar fallo en este proceso</a>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="footer container">
+    <p>Buscaopos · Seguimiento automatizado con GitHub Actions &amp; GitHub Pages · <a href="https://github.com/ozonito/buscaopos" target="_blank" rel="noopener">Repositorio</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

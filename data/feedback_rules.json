@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-17T00:00:00Z",
+  "target_groups": ["A1", "A2", "C1"],
+  "include_keywords": [
+    "técnico",
+    "técnica",
+    "administrador",
+    "administración general",
+    "tributaria",
+    "financiera",
+    "gestión",
+    "escala técnica",
+    "subescala",
+    "cuerpo superior",
+    "oposición",
+    "concurso-oposición",
+    "proceso selectivo",
+    "admitidos",
+    "excluidos",
+    "tribunal calificador",
+    "lista provisional",
+    "lista definitiva",
+    "primer ejercicio",
+    "fecha de examen",
+    "calificaciones"
+  ],
+  "exclude_keywords": [
+    "peón",
+    "operario de limpieza",
+    "socorrista",
+    "albañil",
+    "conductor de camión",
+    "conserje"
+  ],
+  "admin_priority_map": {
+    "Gobierno de Canarias": 1,
+    "Cabildo de Gran Canaria": 2,
+    "Ayuntamientos y Otros": 3
+  },
+  "custom_rules": []
+}
