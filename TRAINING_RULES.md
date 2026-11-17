@@ -16,4 +16,9 @@ El script diario (`scripts/track.py`) inyecta estas reglas en el análisis con I
 - En el BOP de Las Palmas y el BOC, distinguir claramente entre **bases/convocatoria**, **lista provisional/definitiva de admitidos y excluidos**, **nombramiento de tribunal**, **fecha de examen**, **calificaciones** y **nombramiento**.
 
 ## 📝 Historial de Correcciones del Usuario
-*(Añade aquí o mediante GitHub Issues cualquier fallo detectado para que el bot lo tenga en cuenta en futuras ejecuciones).*
+- **2026-11-17 · Estado real de la convocatoria**: El campo `estado` NO puede referirse a la tarea del bot (nunca usar `"En seguimiento"`, `"Vigilado"` o similar). Debe expresar la fase administrativa real: ej. *"A la espera del término del plazo de presentación de instancias"*, *"Publicada relación de admitidos; a la espera de fecha de examen"*, *"A la espera de calificaciones provisionales"*, etc.
+- **2026-11-17 · Análisis documental ordenado y enlace rápido**: Analizar en profundidad todos los documentos publicados en cada convocatoria, ordenados cronológicamente por fecha, haciendo especial referencia al último documento y enlazándolo directamente (`ultimo_documento_url`) para acceso rápido en el dashboard.
+- **2026-11-17 · Avisos inmediatos**: Enviar un aviso por correo electrónico cada vez que se produzca una modificación en cualquiera de las convocatorias.
+- **2026-11-17 · Google Calendar para exámenes**: Si se estima o convoca una fecha de examen, crear una tarea/evento de día completo en Google Calendar con al menos dos semanas de antelación que dure las dos semanas previas al examen para verlo todos los días, incluyendo en el título la hora del llamamiento.
+- **2026-11-17 · Tema oscuro siempre**: El dashboard web debe mostrarse siempre en tema oscuro.
+

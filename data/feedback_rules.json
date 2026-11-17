@@ -38,5 +38,11 @@
     "Cabildo de Gran Canaria": 2,
     "Ayuntamientos y Otros": 3
   },
-  "custom_rules": []
+  "custom_rules": [
+    "El estado de la convocatoria debe indicar la fase administrativa real (nunca 'En seguimiento').",
+    "Ordenar documentos por fecha, analizar en profundidad y enlazar siempre el último documento publicado.",
+    "Enviar aviso inmediato cuando haya modificaciones en cualquier convocatoria.",
+    "Si se estima fecha de examen, agendar evento de día completo de 2 semanas en Google Calendar con la hora de llamamiento en el título.",
+    "Dashboard siempre en tema oscuro."
+  ]
 }

@@ -1,10 +1,10 @@
 {
-  "ultima_actualizacion": "2026-11-17T17:02:01Z",
+  "ultima_actualizacion": "2026-11-17T19:37:10Z",
   "fecha_legible": "2026-11-17",
   "ia_activa": false,
   "resumen": {
     "total_procesos": 4,
-    "total_fuentes": 17,
+    "total_fuentes": 18,
     "fuentes_ok": 15,
     "novedades_recientes": 0
   },
@@ -19,8 +19,13 @@
       "cuerpo": "Cuerpo Superior de Administradores · Escala de Administración Tributaria y Financiera",
       "grupo": "A1",
       "sistema": "Turno Libre",
-      "estado": "En seguimiento",
+      "estado": "Celebrado 3.º ejercicio y convocada lectura; a la espera de calificaciones provisionales",
       "url_portal": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/acceso/convocatorias-en-curso/2026/Acceso_libre/ficha/ADMINISTRACION-TRIBUTARIA-Y-FINANCIERA-Turno-Libre/",
+      "ultimo_documento_url": "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/convoca_lect_3_ejercicio_TFE_A112L26_09112026.pdf",
+      "ultimo_documento_titulo": "Convocatoria para la Lectura del Tercer Ejercicio (09/11/2026)",
+      "ultimo_documento_fecha": "2026-11-09",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
       "keywords": [
         "Administración Tributaria y Financiera",
         "AFT",
@@ -28,11 +33,18 @@
         "Cuerpo Superior de Administradores"
       ],
       "ultima_revision": "2026-11-17",
-      "descripcion": "Proceso selectivo de acceso libre para el ingreso en la Escala de Administración Tributaria y Financiera (Subgrupo A1) de la Administración Pública de la Comunidad Autónoma de Canarias.",
+      "descripcion": "Proceso selectivo de acceso libre para el ingreso en la Escala de Administración Tributaria y Financiera (Subgrupo A1) de la Administración Pública de la Comunidad Autónoma de Canarias (Código A112L26).",
       "historial": [
-        "**2026-11-17**: Ficha inicializada en Buscaopos para seguimiento diario automático en el portal de Función Pública y BOC."
+        "**2026-11-09**: [Convocatoria para la Lectura del Tercer Ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/convoca_lect_3_ejercicio_TFE_A112L26_09112026.pdf) — Lecturas a las 09:30 h en el ICAP (16/11/2026 en Las Palmas y 18/11/2026 en S/C de Tenerife).",
+        "**2026-11-05**: [Distribución de aulas 3.º ejercicio (Las Palmas)](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/asigna_aulas_3_ejercicio_LPS_A112L26_05112026.pdf) — Examen celebrado el 07/11/2026 a las 10:00 h en el I.E.S. Profesor Juan Pulido Castro.",
+        "**2026-11-04**: [Documento relativo al sorteo de temas y epígrafes del 3.º ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/A112L26_temas_sorteo_04112026.pdf).",
+        "**2026-11-03**: [Resolución de calificaciones definitivas del 2.º ejercicio y convocatoria/instrucciones del 3.º](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/resol_califica_defin_2_ejerci_convoca_instr_3_ejerc_A112L26_03112026.pdf).",
+        "**2026-10-22**: [Calificaciones provisionales del 2.º ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/A112L26_Resolucion_Calificaciones_Provisionales_Segundo_Ejercicio_22102022.pdf).",
+        "**2026-09-02**: [Calificaciones definitivas del 1.º ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/resoluc_publica_califica_defin_1_ejercic_A112L26_02092026.pdf).",
+        "**2026-07-17**: [Lista definitiva de personas admitidas y excluidas (BOC 138)](https://www.gobiernodecanarias.org/boc/2026/138/2436.html).",
+        "**2026-03-24**: [Convocatoria en el BOC nº 57](https://www.gobiernodecanarias.org/boc/2026/057/948.html)."
       ],
-      "situacion_actual": "Convocatoria en curso registrada en el portal de Función Pública del Gobierno de Canarias (Turno Libre 2026). Pendiente de primera comprobación automática diaria del portal y del BOC para extraer el último hito publicado."
+      "situacion_actual": "El tercer ejercicio se celebró el 07/11/2026 y, conforme al último documento publicado el 09/11/2026 ([Convocatoria para la Lectura del Tercer Ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/convoca_lect_3_ejercicio_TFE_A112L26_09112026.pdf)), la lectura en Las Palmas tuvo lugar el 16/11/2026 y en Tenerife se realiza el 18/11/2026 a las 09:30 h. El proceso queda **a la espera de la publicación de las calificaciones provisionales del tercer ejercicio**."
     },
     {
       "id": "autgc_tecnico_gestion_administrativa",
@@ -44,8 +56,13 @@
       "cuerpo": "Técnico/a de Gestión Administrativa y Digital",
       "grupo": "A1 / A2",
       "sistema": "Proceso selectivo",
-      "estado": "En seguimiento",
+      "estado": "Sin anuncios publicados en tablón; a la espera de convocatoria o lista",
       "url_portal": "https://ferrocarrilesgrancanaria.sedelectronica.es/info.0",
+      "ultimo_documento_url": "https://ferrocarrilesgrancanaria.sedelectronica.es/board",
+      "ultimo_documento_titulo": "Tablón de anuncios de la Sede Electrónica (AUTGC)",
+      "ultimo_documento_fecha": "2026-11-17",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
       "keywords": [
         "Autoridad Única del Transporte",
         "AUTGC",
@@ -69,8 +86,13 @@
       "cuerpo": "Cuerpos Técnicos A1 / A2 / C1 (4 procesos vigilados)",
       "grupo": "A1 / A2 / C1",
       "sistema": "Turno Libre / Concurso-Oposición",
-      "estado": "En seguimiento",
-      "url_portal": "https://cabildo.grancanaria.com/ciu/empleo-publico",
+      "estado": "A la espera de nuevas resoluciones en tablón del Cabildo y BOP",
+      "url_portal": "https://sede.grancanaria.com/tablon-de-anuncios",
+      "ultimo_documento_url": "",
+      "ultimo_documento_titulo": "",
+      "ultimo_documento_fecha": "",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
       "keywords": [
         "Cabildo de Gran Canaria",
         "empleo público",
@@ -95,8 +117,13 @@
       "cuerpo": "Escala Técnica de Gestión / Administración (Subgrupo A1)",
       "grupo": "A1",
       "sistema": "Turno Libre",
-      "estado": "En seguimiento",
+      "estado": "Publicada lista provisional de admitidos/excluidos y Tribunal; a la espera de lista definitiva",
       "url_portal": "https://www.ulpgc.es/spersonal-pas/convocatoriasdepromocioni",
+      "ultimo_documento_url": "https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/04_tribunal_rect._a1.pdf",
+      "ultimo_documento_titulo": "Rectificación del nombramiento del Tribunal Calificador (Escala Técnica A1)",
+      "ultimo_documento_fecha": "2026-11-04",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
       "keywords": [
         "ULPGC",
         "Escala Técnica",
@@ -104,11 +131,14 @@
         "PAS"
       ],
       "ultima_revision": "2026-11-17",
-      "descripcion": "Convocatoria de acceso libre para la Escala Técnica (Subgrupo A1) del Personal de Administración y Servicios (PAS) funcionario de la Universidad de Las Palmas de Gran Canaria.",
+      "descripcion": "Convocatoria de acceso libre para la Escala Técnica (Subgrupo A1) del Personal de Administración y Servicios (PAS) funcionario de la Universidad de Las Palmas de Gran Canaria (ramas Derecho y Licenciatura/Grado).",
       "historial": [
-        "**2026-11-17**: Ficha inicializada en Buscaopos a partir de `webs.md`."
+        "**2026-11-04**: [Rectificación del nombramiento del Tribunal Calificador (Lic./Grado)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/04_tribunal_rect._a1.pdf) y [Nombramiento Tribunal (Derecho)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/tribunal_a1_derecho.pdf).",
+        "**2026**: [Lista provisional de aspirantes admitidos y excluidos (Derecho)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_listado_prov_a1_derecho.pdf) y [(Lic./Grado)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_listado_prov_a1.pdf).",
+        "**2026**: [Ampliación del plazo para la publicación del listado provisional (Derecho)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_ampliacion_a1_derecho.pdf) y [(Lic./Grado)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_ampliacion_a1.pdf).",
+        "**2026**: [Bases de la convocatoria en el BOC (nº 120)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/boc-a-2026-120-2088.pdf) y [Anuncio en el BOE](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/boe-a-2026-13917.pdf)."
       ],
-      "situacion_actual": "En seguimiento diario del portal de Personal de Administración y Servicios de la ULPGC y del BOC para comprobar resoluciones, listas de admitidos, fechas de ejercicios y calificaciones."
+      "situacion_actual": "Se han publicado las listas provisionales de aspirantes admitidos y excluidos y el nombramiento del Tribunal Calificador (siendo el último documento la [Rectificación del nombramiento del Tribunal Calificador](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/04_tribunal_rect._a1.pdf), última actualización web el 04/11/2026). El proceso queda **a la espera de la publicación de la lista definitiva de admitidos/excluidos y la fecha del primer ejercicio**."
     }
   ],
   "novedades": [],
@@ -122,7 +152,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "AFT · Administración Tributaria y Financiera",
@@ -133,7 +163,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Boletín Oficial de la Provincia (BOP)",
@@ -144,7 +174,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Cabildo de Gran Canaria",
@@ -155,7 +185,18 @@
       "http_status": 403,
       "estado_rastreo": "error",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
+    },
+    {
+      "nombre": "Cabildo de Gran Canaria (Tablón)",
+      "ambito": "Tablón de Anuncios (Sede)",
+      "url": "https://sede.grancanaria.com/tablon-de-anuncios",
+      "frecuencia": "Diario",
+      "ficha": "cabildo_gc_procesos_vigilados",
+      "http_status": 403,
+      "estado_rastreo": "error",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Autoridad Única del Transporte de Gran Canaria",
@@ -166,7 +207,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Ayuntamiento de Las Palmas de Gran Canaria",
@@ -177,7 +218,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Ayuntamiento de San Bartolomé de Tirajana",
@@ -188,7 +229,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Ayuntamiento de Teror",
@@ -199,7 +240,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Ayuntamiento de Santa Lucía",
@@ -210,7 +251,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Turismo LPA (Ayto)",
@@ -221,7 +262,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "ULPGC (Funcionario TL)",
@@ -232,7 +273,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "ULPGC (Pers. Laboral Fijo)",
@@ -243,7 +284,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Audiencia de Cuentas de Canarias",
@@ -254,7 +295,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Puertos de Las Palmas",
@@ -265,7 +306,7 @@
       "http_status": 0,
       "estado_rastreo": "error",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Valora Gestión Tributaria",
@@ -276,7 +317,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "AEAT (Agencia Tributaria)",
@@ -287,7 +328,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     },
     {
       "nombre": "Boletín Estatal (PAG)",
@@ -298,7 +339,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-17T17:02:01Z"
+      "ultima_comprobacion": "2026-11-17T19:37:10Z"
     }
   ],
   "reglas_entrenamiento_url": "TRAINING_RULES.md"

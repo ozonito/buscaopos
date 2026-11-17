@@ -99,12 +99,20 @@ function renderProcesos() {
 }
 
 function renderCard(p) {
+  const docLink = p.ultimo_documento_url
+    ? `<a class="btn btn-outline" href="${escapeHtml(p.ultimo_documento_url)}" target="_blank" rel="noopener" title="${escapeHtml(p.ultimo_documento_titulo || "Último documento publicado")}">📎 Último doc</a>`
+    : "";
+  const examBadge = p.fecha_examen
+    ? `<span class="badge badge-ok">📅 Examen: ${escapeHtml(p.fecha_examen)}${p.hora_llamamiento ? " · " + escapeHtml(p.hora_llamamiento) : ""}</span>`
+    : "";
+
   return `
     <article class="process-card">
       <div>
         <div class="card-meta">
           <span class="badge">${escapeHtml(p.grupo)} · ${escapeHtml(p.sistema || "Proceso")}</span>
           <span class="badge badge-muted">${escapeHtml(p.estado)}</span>
+          ${examBadge}
         </div>
         <h3 class="card-title">${escapeHtml(p.titulo)}</h3>
         <p class="card-org">${escapeHtml(p.organismo)}</p>
@@ -114,10 +122,12 @@ function renderCard(p) {
       <div class="situacion-box">
         <h4>Situación actual del proceso selectivo</h4>
         <p>${escapeHtml(p.situacion_actual || "Sin información registrada todavía.")}</p>
+        ${p.ultimo_documento_url ? `<p class="muted" style="margin:0.4rem 0 0;font-size:0.82rem;">Último doc (${escapeHtml(p.ultimo_documento_fecha || "s/f")}): <a href="${escapeHtml(p.ultimo_documento_url)}" target="_blank" rel="noopener">${escapeHtml(p.ultimo_documento_titulo || "Ver documento")}</a></p>` : ""}
       </div>
 
       <div class="card-actions">
-        <button class="btn btn-outline" data-open-modal="${escapeHtml(p.id)}">📄 Ver ficha e historial</button>
+        <button class="btn btn-outline" data-open-modal="${escapeHtml(p.id)}">📄 Ficha e historial</button>
+        ${docLink}
         <a class="btn btn-outline" href="${escapeHtml(p.url_portal)}" target="_blank" rel="noopener">🔗 Portal</a>
       </div>
     </article>
@@ -136,9 +146,22 @@ function openModal(id) {
   document.getElementById("modal-portal-link").href = p.url_portal || "#";
   document.getElementById("modal-report-link").href = buildReportIssueUrl(p);
 
+  const modalDocLink = document.getElementById("modal-doc-link");
+  if (p.ultimo_documento_url) {
+    modalDocLink.href = p.ultimo_documento_url;
+    modalDocLink.textContent = `📎 ${p.ultimo_documento_titulo ? p.ultimo_documento_titulo.slice(0, 38) : "Último documento"}`;
+    modalDocLink.style.display = "inline-flex";
+  } else {
+    modalDocLink.style.display = "none";
+  }
+
   const histHtml = (p.historial || []).length
     ? `<ul>${p.historial.map((h) => `<li>${escapeHtml(h)}</li>`).join("")}</ul>`
     : `<p class="muted">Sin hitos registrados todavía.</p>`;
+
+  const examHtml = p.fecha_examen
+    ? `<div><h4>Fecha estimada / convocada de examen</h4><p><strong>${escapeHtml(p.fecha_examen)}</strong>${p.hora_llamamiento ? ` · Llamamiento: <strong>${escapeHtml(p.hora_llamamiento)}</strong>` : ""}</p></div>`
+    : "";
 
   // El último apartado debe ser siempre la situación actual del proceso selectivo
   document.getElementById("modal-body").innerHTML = `
@@ -146,13 +169,15 @@ function openModal(id) {
       <h4>Descripción</h4>
       <p>${escapeHtml(p.descripcion || "—")}</p>
     </div>
+    ${examHtml}
     <div>
-      <h4>Historial de hitos y publicaciones</h4>
+      <h4>Historial de hitos y publicaciones (ordenado por fecha)</h4>
       ${histHtml}
     </div>
     <div class="situacion-box">
       <h4>Situación actual del proceso selectivo</h4>
       <p>${escapeHtml(p.situacion_actual || "Pendiente de actualización.")}</p>
+      ${p.ultimo_documento_url ? `<p style="margin:0.5rem 0 0;"><a href="${escapeHtml(p.ultimo_documento_url)}" target="_blank" rel="noopener">📎 Acceso rápido al último documento (${escapeHtml(p.ultimo_documento_fecha || "s/f")}): ${escapeHtml(p.ultimo_documento_titulo || p.ultimo_documento_url)}</a></p>` : ""}
     </div>
   `;
 

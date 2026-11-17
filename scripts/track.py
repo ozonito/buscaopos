@@ -140,8 +140,13 @@ def parse_ficha(path: Path) -> dict[str, Any]:
         "cuerpo": meta.get("cuerpo", ""),
         "grupo": meta.get("grupo", "A1/A2/C1"),
         "sistema": meta.get("sistema", ""),
-        "estado": meta.get("estado", "En seguimiento"),
+        "estado": meta.get("estado", "A la espera de publicación de novedades"),
         "url_portal": meta.get("url_portal", ""),
+        "ultimo_documento_url": meta.get("ultimo_documento_url", ""),
+        "ultimo_documento_titulo": meta.get("ultimo_documento_titulo", ""),
+        "ultimo_documento_fecha": str(meta.get("ultimo_documento_fecha", "")),
+        "fecha_examen": str(meta.get("fecha_examen", "")),
+        "hora_llamamiento": str(meta.get("hora_llamamiento", "")),
         "keywords": meta.get("keywords", []),
         "ultima_revision": str(meta.get("ultima_revision", "")),
         "descripcion": sections.get("Descripción del proceso", ""),
@@ -159,6 +164,11 @@ def update_ficha_file(
     new_hito: str | None,
     new_situacion: str | None,
     today_str: str,
+    ultimo_doc_url: str | None = None,
+    ultimo_doc_titulo: str | None = None,
+    ultimo_doc_fecha: str | None = None,
+    fecha_examen: str | None = None,
+    hora_llamamiento: str | None = None,
 ) -> None:
     """Actualiza una ficha .md manteniendo siempre 'Situación actual del proceso selectivo' al final."""
     ficha = parse_ficha(ficha_path)
@@ -166,6 +176,16 @@ def update_ficha_file(
     meta["ultima_revision"] = today_str
     if new_estado:
         meta["estado"] = new_estado
+    if ultimo_doc_url:
+        meta["ultimo_documento_url"] = ultimo_doc_url
+    if ultimo_doc_titulo:
+        meta["ultimo_documento_titulo"] = ultimo_doc_titulo
+    if ultimo_doc_fecha:
+        meta["ultimo_documento_fecha"] = ultimo_doc_fecha
+    if fecha_examen:
+        meta["fecha_examen"] = fecha_examen
+    if hora_llamamiento:
+        meta["hora_llamamiento"] = hora_llamamiento
 
     sections = ficha["_sections"]
     if new_hito:
@@ -330,9 +350,22 @@ def analyze_with_gemini(
     ]
 
     prompt = f"""Eres el asistente experto de Buscaopos (fecha de hoy: {today_str}).
-Tu tarea es analizar las novedades detectadas hoy en los portales web, en el BOP de Las Palmas y en el BOC de Canarias.
+Tu tarea es analizar EN PROFUNDIDAD las novedades y documentos publicados hoy en los portales web, en el BOP de Las Palmas y en el BOC de Canarias.
 
-REGLAS DE ENTRENAMIENTO DEL USUARIO (OBLIGATORIAS):
+REGLAS OBLIGATORIAS:
+1. El campo "nuevo_estado" NO puede referirse nunca a la tarea del bot (PROHIBIDO usar "En seguimiento", "Vigilado", "Rastreando", etc.). Debe reflejar la FASE ADMINISTRATIVA REAL de la convocatoria, por ejemplo:
+   - "A la espera del término del plazo de presentación de instancias"
+   - "Publicada relación provisional de admitidos/excluidos; a la espera de lista definitiva"
+   - "Publicada relación definitiva de admitidos; a la espera de fecha de examen"
+   - "Convocado primer/segundo/tercer ejercicio (fecha y llamamiento publicados)"
+   - "A la espera de las calificaciones provisionales"
+   - "A la espera de las calificaciones definitivas"
+   - "En fase de concurso / valoración de méritos"
+   - "Pendiente de nombramiento"
+2. Analiza en profundidad cada documento publicado, ordena los hitos por fecha y haz especial referencia al ÚLTIMO documento publicado en "nueva_situacion_actual", devolviendo su URL directa en "ultimo_documento_url".
+3. Si en algún documento se estima o convoca una fecha de examen, extrae "fecha_examen" (YYYY-MM-DD) y "hora_llamamiento" (ej. "09:30").
+
+REGLAS DE ENTRENAMIENTO DEL USUARIO:
 {training_rules_md[:3000]}
 
 PROCESOS SELECTIVOS ACTIVOS ACTUALMENTE:
@@ -351,18 +384,23 @@ Devuelve EXCLUSIVAMENTE un JSON válido (sin markdown ```json) con esta estructu
       "fecha": "{today_str}",
       "fuente": "Nombre de la web o boletín",
       "titulo": "Resumen corto de la novedad",
-      "url": "URL directa",
+      "url": "URL directa del documento",
       "ficha_id": "id de la ficha relacionada o null si es nueva convocatoria",
       "relevancia": "alta|media|baja",
-      "resumen": "Explicación clara de qué se ha publicado"
+      "resumen": "Explicación detallada del documento publicado y qué implica para el proceso"
     }}
   ],
   "actualizaciones_fichas": [
     {{
       "ficha_id": "id de la ficha a actualizar",
-      "nuevo_estado": "En seguimiento|Plazo abierto|Admitidos/Excluidos|Pendiente de examen|En fase de oposición|Concurso|Finalizado",
-      "nuevo_hito": "Texto corto del hito para añadir al historial",
-      "nueva_situacion_actual": "Párrafo claro y actualizado de la Situación actual del proceso selectivo"
+      "nuevo_estado": "Fase administrativa real del proceso (nunca 'En seguimiento')",
+      "nuevo_hito": "Texto corto del hito con enlace o referencia al documento",
+      "nueva_situacion_actual": "Párrafo claro haciendo especial referencia al último documento publicado y a qué fase se espera ahora",
+      "ultimo_documento_url": "URL directa del último documento publicado",
+      "ultimo_documento_titulo": "Título del último documento",
+      "ultimo_documento_fecha": "YYYY-MM-DD",
+      "fecha_examen": "YYYY-MM-DD o null",
+      "hora_llamamiento": "HH:MM o null"
     }}
   ]
 }}
@@ -529,6 +567,11 @@ def main() -> None:
                 "sistema": f["sistema"],
                 "estado": f["estado"],
                 "url_portal": f["url_portal"],
+                "ultimo_documento_url": f["ultimo_documento_url"],
+                "ultimo_documento_titulo": f["ultimo_documento_titulo"],
+                "ultimo_documento_fecha": f["ultimo_documento_fecha"],
+                "fecha_examen": f["fecha_examen"],
+                "hora_llamamiento": f["hora_llamamiento"],
                 "keywords": f["keywords"],
                 "ultima_revision": f["ultima_revision"],
                 "descripcion": f["descripcion"],
