@@ -122,10 +122,15 @@ def parse_ficha(path: Path) -> dict[str, Any]:
             buffer.append(line)
     sections[current_heading] = "\n".join(buffer).strip()
 
-    situacion_actual = sections.get("Situación actual del proceso selectivo", "")
+    def clean_md_text(s: str) -> str:
+        s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)
+        s = re.sub(r"\*\*([^*]+)\*\*", r"\1", s)
+        return s.strip()
+
+    situacion_actual = clean_md_text(sections.get("Situación actual del proceso selectivo", ""))
     historial_raw = sections.get("Historial de hitos y publicaciones", "")
     historial = [
-        ln.lstrip("- ").strip()
+        clean_md_text(ln.lstrip("- ").strip())
         for ln in historial_raw.splitlines()
         if ln.strip().startswith("-")
     ]

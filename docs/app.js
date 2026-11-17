@@ -122,13 +122,12 @@ function renderCard(p) {
       <div class="situacion-box">
         <h4>Situación actual del proceso selectivo</h4>
         <p>${escapeHtml(p.situacion_actual || "Sin información registrada todavía.")}</p>
-        ${p.ultimo_documento_url ? `<p class="muted" style="margin:0.4rem 0 0;font-size:0.82rem;">Último doc (${escapeHtml(p.ultimo_documento_fecha || "s/f")}): <a href="${escapeHtml(p.ultimo_documento_url)}" target="_blank" rel="noopener">${escapeHtml(p.ultimo_documento_titulo || "Ver documento")}</a></p>` : ""}
       </div>
 
       <div class="card-actions">
         <button class="btn btn-outline" data-open-modal="${escapeHtml(p.id)}">📄 Ficha e historial</button>
         ${docLink}
-        <a class="btn btn-outline" href="${escapeHtml(p.url_portal)}" target="_blank" rel="noopener">🔗 Portal</a>
+        <a class="btn btn-outline" href="${escapeHtml(p.url_portal)}" target="_blank" rel="noopener">🔗 Web del proceso</a>
       </div>
     </article>
   `;
@@ -149,7 +148,8 @@ function openModal(id) {
   const modalDocLink = document.getElementById("modal-doc-link");
   if (p.ultimo_documento_url) {
     modalDocLink.href = p.ultimo_documento_url;
-    modalDocLink.textContent = `📎 ${p.ultimo_documento_titulo ? p.ultimo_documento_titulo.slice(0, 38) : "Último documento"}`;
+    modalDocLink.textContent = "📎 Último documento";
+    modalDocLink.title = p.ultimo_documento_titulo || "Último documento publicado";
     modalDocLink.style.display = "inline-flex";
   } else {
     modalDocLink.style.display = "none";
@@ -177,7 +177,6 @@ function openModal(id) {
     <div class="situacion-box">
       <h4>Situación actual del proceso selectivo</h4>
       <p>${escapeHtml(p.situacion_actual || "Pendiente de actualización.")}</p>
-      ${p.ultimo_documento_url ? `<p style="margin:0.5rem 0 0;"><a href="${escapeHtml(p.ultimo_documento_url)}" target="_blank" rel="noopener">📎 Acceso rápido al último documento (${escapeHtml(p.ultimo_documento_fecha || "s/f")}): ${escapeHtml(p.ultimo_documento_titulo || p.ultimo_documento_url)}</a></p>` : ""}
     </div>
   `;
 

@@ -35,16 +35,16 @@
       "ultima_revision": "2026-11-17",
       "descripcion": "Proceso selectivo de acceso libre para el ingreso en la Escala de Administración Tributaria y Financiera (Subgrupo A1) de la Administración Pública de la Comunidad Autónoma de Canarias (Código A112L26).",
       "historial": [
-        "**2026-11-09**: [Convocatoria para la Lectura del Tercer Ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/convoca_lect_3_ejercicio_TFE_A112L26_09112026.pdf) — Lecturas a las 09:30 h en el ICAP (16/11/2026 en Las Palmas y 18/11/2026 en S/C de Tenerife).",
-        "**2026-11-05**: [Distribución de aulas 3.º ejercicio (Las Palmas)](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/asigna_aulas_3_ejercicio_LPS_A112L26_05112026.pdf) — Examen celebrado el 07/11/2026 a las 10:00 h en el I.E.S. Profesor Juan Pulido Castro.",
-        "**2026-11-04**: [Documento relativo al sorteo de temas y epígrafes del 3.º ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/A112L26_temas_sorteo_04112026.pdf).",
-        "**2026-11-03**: [Resolución de calificaciones definitivas del 2.º ejercicio y convocatoria/instrucciones del 3.º](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/resol_califica_defin_2_ejerci_convoca_instr_3_ejerc_A112L26_03112026.pdf).",
-        "**2026-10-22**: [Calificaciones provisionales del 2.º ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/A112L26_Resolucion_Calificaciones_Provisionales_Segundo_Ejercicio_22102022.pdf).",
-        "**2026-09-02**: [Calificaciones definitivas del 1.º ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/resoluc_publica_califica_defin_1_ejercic_A112L26_02092026.pdf).",
-        "**2026-07-17**: [Lista definitiva de personas admitidas y excluidas (BOC 138)](https://www.gobiernodecanarias.org/boc/2026/138/2436.html).",
-        "**2026-03-24**: [Convocatoria en el BOC nº 57](https://www.gobiernodecanarias.org/boc/2026/057/948.html)."
+        "2026-11-09: Convocatoria para la lectura del tercer ejercicio a las 09:30 h en el ICAP (16/11 en Las Palmas y 18/11 en S/C de Tenerife).",
+        "2026-11-05: Distribución de aulas del tercer ejercicio (celebrado el 07/11/2026 a las 10:00 h en el I.E.S. Profesor Juan Pulido Castro).",
+        "2026-11-04: Publicado el documento relativo al sorteo de temas y epígrafes del tercer ejercicio.",
+        "2026-11-03: Publicadas las calificaciones definitivas del segundo ejercicio junto con la convocatoria e instrucciones del tercero.",
+        "2026-10-22: Publicadas las calificaciones provisionales del segundo ejercicio.",
+        "2026-09-02: Publicadas las calificaciones definitivas del primer ejercicio.",
+        "2026-07-17: Publicada la lista definitiva de personas admitidas y excluidas (BOC nº 138).",
+        "2026-03-24: Publicada la convocatoria oficial en el BOC nº 57."
       ],
-      "situacion_actual": "El tercer ejercicio se celebró el 07/11/2026 y, conforme al último documento publicado el 09/11/2026 ([Convocatoria para la Lectura del Tercer Ejercicio](https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/convoca_lect_3_ejercicio_TFE_A112L26_09112026.pdf)), la lectura en Las Palmas tuvo lugar el 16/11/2026 y en Tenerife se realiza el 18/11/2026 a las 09:30 h. El proceso queda **a la espera de la publicación de las calificaciones provisionales del tercer ejercicio**."
+      "situacion_actual": "El tercer ejercicio se celebró el 07/11/2026 y, conforme al último documento publicado el 09/11/2026 (Convocatoria para la Lectura del Tercer Ejercicio), las lecturas se realizan el 16/11/2026 en Las Palmas y el 18/11/2026 en Tenerife a las 09:30 h. El proceso queda a la espera de las calificaciones provisionales del tercer ejercicio."
     },
     {
       "id": "autgc_tecnico_gestion_administrativa",
@@ -72,7 +72,7 @@
       "ultima_revision": "2026-11-17",
       "descripcion": "Proceso selectivo para plaza/puesto de Técnico/a de Gestión Administrativa y Digital en la Autoridad Única del Transporte de Gran Canaria (organismo vinculado al Cabildo de Gran Canaria).",
       "historial": [
-        "**2026-11-17**: Ficha inicializada en Buscaopos a partir de `webs.md`."
+        "2026-11-17: Ficha inicializada en Buscaopos a partir de `webs.md`."
       ],
       "situacion_actual": "En vigilancia diaria en la sede electrónica de la AUTGC y en el BOP de Las Palmas para detectar cualquier novedad, requerimiento o publicación de listas y pruebas."
     },
@@ -103,7 +103,7 @@
       "ultima_revision": "2026-11-17",
       "descripcion": "Seguimiento de las convocatorias de empleo público del Cabildo de Gran Canaria (grupos A1, A2 y C1). Según la evolución de cada cuerpo, se desglosarán en fichas independientes cuando se publiquen nuevos actos en el BOP de Las Palmas o en el portal del Cabildo.",
       "historial": [
-        "**2026-11-17**: Ficha inicializada en Buscaopos a partir de `webs.md` (4 procesos vigilados)."
+        "2026-11-17: Ficha inicializada en Buscaopos a partir de `webs.md` (4 procesos vigilados)."
       ],
       "situacion_actual": "Portal en vigilancia diaria para detectar nuevas publicaciones de listas de admitidos/excluidos, tribunales, fechas de examen y resoluciones en el BOP de Las Palmas y en la sede del Cabildo."
     },
@@ -133,12 +133,12 @@
       "ultima_revision": "2026-11-17",
       "descripcion": "Convocatoria de acceso libre para la Escala Técnica (Subgrupo A1) del Personal de Administración y Servicios (PAS) funcionario de la Universidad de Las Palmas de Gran Canaria (ramas Derecho y Licenciatura/Grado).",
       "historial": [
-        "**2026-11-04**: [Rectificación del nombramiento del Tribunal Calificador (Lic./Grado)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/04_tribunal_rect._a1.pdf) y [Nombramiento Tribunal (Derecho)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/tribunal_a1_derecho.pdf).",
-        "**2026**: [Lista provisional de aspirantes admitidos y excluidos (Derecho)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_listado_prov_a1_derecho.pdf) y [(Lic./Grado)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_listado_prov_a1.pdf).",
-        "**2026**: [Ampliación del plazo para la publicación del listado provisional (Derecho)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_ampliacion_a1_derecho.pdf) y [(Lic./Grado)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal/resolucion_ampliacion_a1.pdf).",
-        "**2026**: [Bases de la convocatoria en el BOC (nº 120)](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/boc-a-2026-120-2088.pdf) y [Anuncio en el BOE](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/boe-a-2026-13917.pdf)."
+        "2026-11-04: Publicada la rectificación del nombramiento del Tribunal Calificador (Lic./Grado) y nombramiento del Tribunal (Derecho).",
+        "2026: Publicadas las listas provisionales de aspirantes admitidos y excluidos (Derecho y Lic./Grado).",
+        "2026: Publicada la ampliación del plazo para el listado provisional de admitidos y excluidos.",
+        "2026: Publicadas las bases de la convocatoria en el BOC (nº 120) y anuncio en el BOE."
       ],
-      "situacion_actual": "Se han publicado las listas provisionales de aspirantes admitidos y excluidos y el nombramiento del Tribunal Calificador (siendo el último documento la [Rectificación del nombramiento del Tribunal Calificador](https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/04_tribunal_rect._a1.pdf), última actualización web el 04/11/2026). El proceso queda **a la espera de la publicación de la lista definitiva de admitidos/excluidos y la fecha del primer ejercicio**."
+      "situacion_actual": "Se han publicado las listas provisionales de aspirantes admitidos y excluidos y el nombramiento del Tribunal Calificador (último documento: Rectificación del nombramiento del Tribunal Calificador, actualizado en la web el 04/11/2026). El proceso queda a la espera de la lista definitiva de admitidos y excluidos y de la fecha del primer ejercicio."
     }
   ],
   "novedades": [],
