@@ -7,7 +7,8 @@ organismo: "Gobierno de Canarias · Dirección General de la Función Pública"
 cuerpo: "Cuerpo Superior de Administradores · Escala de Administración Tributaria y Financiera"
 grupo: "A1"
 sistema: "Turno Libre"
-estado: "Celebrado 3.º ejercicio y convocada lectura; a la espera de calificaciones provisionales"
+estado: "Suspendido; a la espera únicamente de la publicación de la lista de reserva"
+solo_lista_reserva: true
 url_portal: "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/acceso/convocatorias-en-curso/2026/Acceso_libre/ficha/ADMINISTRACION-TRIBUTARIA-Y-FINANCIERA-Turno-Libre/"
 ultimo_documento_url: "https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/docs_web/procesos_selectivos/procesos_2026/aft_li/convoca_lect_3_ejercicio_TFE_A112L26_09112026.pdf"
 ultimo_documento_titulo: "Convocatoria para la Lectura del Tercer Ejercicio (09/11/2026)"
@@ -16,7 +17,7 @@ keywords:
   - "Administración Tributaria y Financiera"
   - "AFT"
   - "aft_a112l26"
-  - "Cuerpo Superior de Administradores"
+  - "lista de reserva"
 ultima_revision: "2026-11-17"
 ---
 
@@ -28,6 +29,7 @@ Proceso selectivo de acceso libre para el ingreso en la Escala de Administració
 - **Boletín de referencia**: Boletín Oficial de Canarias (BOC)
 
 ## Historial de hitos y publicaciones
+- **2026-11-17**: Marcado como suspendido; aviso restringido exclusivamente a la publicación de la lista de reserva.
 - **2026-11-09**: Convocatoria para la lectura del tercer ejercicio a las 09:30 h en el ICAP (16/11 en Las Palmas y 18/11 en S/C de Tenerife).
 - **2026-11-05**: Distribución de aulas del tercer ejercicio (celebrado el 07/11/2026 a las 10:00 h en el I.E.S. Profesor Juan Pulido Castro).
 - **2026-11-04**: Publicado el documento relativo al sorteo de temas y epígrafes del tercer ejercicio.
@@ -38,4 +40,4 @@ Proceso selectivo de acceso libre para el ingreso en la Escala de Administració
 - **2026-03-24**: Publicada la convocatoria oficial en el BOC nº 57.
 
 ## Situación actual del proceso selectivo
-El tercer ejercicio se celebró el 07/11/2026 y, conforme al último documento publicado el 09/11/2026 (Convocatoria para la Lectura del Tercer Ejercicio), las lecturas se realizan el 16/11/2026 en Las Palmas y el 18/11/2026 en Tenerife a las 09:30 h. El proceso queda a la espera de las calificaciones provisionales del tercer ejercicio.
+Proceso en estado de suspensión. El seguimiento queda limitado exclusivamente a detectar y avisar cuando se publique la lista de reserva.

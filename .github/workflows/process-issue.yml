@@ -1,0 +1,56 @@
+name: Buscaopos · Procesar Issue del Móvil
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process-issue:
+    # Seguridad: solo procesar Issues abiertos por el propietario del repositorio
+    if: github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Instalar dependencias
+        run: pip install -r scripts/requirements.txt
+
+      - name: Procesar instrucción del Issue
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          RESULT_FILE: /tmp/issue_result.txt
+        run: python scripts/process_issue.py
+
+      - name: Guardar cambios en main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fichas/ webs.md TRAINING_RULES.md data/ docs/data/dashboard.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios que guardar."
+          else
+            git commit -m "chore(issue): aplicar instrucción #${{ github.event.issue.number }}"
+            git push
+          fi
+
+      - name: Responder y cerrar Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
+        run: |
+          MSG=$(cat /tmp/issue_result.txt 2>/dev/null || echo "Instrucción procesada.")
+          gh issue comment "$ISSUE_NUM" --body "✅ $MSG"
+          gh issue close "$ISSUE_NUM"
