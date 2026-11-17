@@ -12,6 +12,7 @@ Este archivo contiene el listado de páginas web y boletines oficiales que el bo
 | **AFT · Administración Tributaria y Financiera** | Funcionario TL (acceso libre) | https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/acceso/convocatorias-en-curso/2026/Acceso_libre/ficha/ADMINISTRACION-TRIBUTARIA-Y-FINANCIERA-Turno-Libre/ | Periódico | `gobcan_aft_a1_2026` |
 | **Boletín Oficial de la Provincia (BOP)** | Boletín Provincial | https://www.boplaspalmas.net/nbop2/index.php | Lunes, Miércoles y Viernes | — |
 | **Cabildo de Gran Canaria** | Portal de Empleo Público | https://cabildo.grancanaria.com/ciu/empleo-publico | Periódico | `cabildo_gc_procesos_vigilados` |
+| **Cabildo de Gran Canaria (Tablón)** | Tablón de Anuncios (Sede) | https://sede.grancanaria.com/tablon-de-anuncios | Diario | `cabildo_gc_procesos_vigilados` |
 | **Autoridad Única del Transporte de Gran Canaria** | Técnico/a de Gestión Administrativa y Digital | https://ferrocarrilesgrancanaria.sedelectronica.es/info.0 | Periódico | `autgc_tecnico_gestion_administrativa` |
 | **Ayuntamiento de Las Palmas de Gran Canaria** | Convocatorias en Curso | https://www.laspalmasgc.es/es/ayuntamiento/empleo-publico/convocatorias-en-curso/ | Periódico | — |
 | **Ayuntamiento de San Bartolomé de Tirajana** | Portal de Empleo Público | https://www.maspalomas.com/oposicionesyempleo | Periódico | — |

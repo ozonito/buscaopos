@@ -23,6 +23,7 @@ Seguimiento de las convocatorias de empleo público del Cabildo de Gran Canaria 
 
 ## Fuentes oficiales de seguimiento
 - **Portal de Empleo Público**: [Cabildo de Gran Canaria](https://cabildo.grancanaria.com/ciu/empleo-publico)
+- **Tablón de Anuncios (Sede)**: [Sede Electrónica Cabildo GC](https://sede.grancanaria.com/tablon-de-anuncios)
 - **Boletines de referencia**: BOP de Las Palmas y BOC
 
 ## Historial de hitos y publicaciones
