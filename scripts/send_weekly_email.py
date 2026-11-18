@@ -20,7 +20,7 @@ DASHBOARD_FILE = ROOT_DIR / "data" / "dashboard.json"
 
 def main() -> None:
     smtp_host = os.environ.get("SMTP_HOST", "").strip()
-    smtp_port = int(os.environ.get("SMTP_PORT", "587"))
+    smtp_port = int((os.environ.get("SMTP_PORT") or "587").strip())
     smtp_user = os.environ.get("SMTP_USER", "").strip()
     smtp_pass = os.environ.get("SMTP_PASS", "").strip()
     email_to = os.environ.get("EMAIL_TO", "").strip()
