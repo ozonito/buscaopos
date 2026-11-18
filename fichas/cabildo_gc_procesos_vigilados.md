@@ -7,7 +7,8 @@ organismo: "Cabildo de Gran Canaria"
 cuerpo: "Cuerpos Técnicos A1 / A2 / C1 (4 procesos vigilados)"
 grupo: "A1 / A2 / C1"
 sistema: "Turno Libre / Concurso-Oposición"
-estado: "A la espera de nuevas resoluciones en tablón del Cabildo y BOP"
+estado: "Desglosado en fichas individuales"
+activo: false
 url_portal: "https://sede.grancanaria.com/tablon-de-anuncios"
 keywords:
   - "Cabildo de Gran Canaria"

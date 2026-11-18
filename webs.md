@@ -10,6 +10,7 @@ Este archivo contiene el listado de páginas web y boletines oficiales que el bo
 |:---|:---|:---|:---|:---|
 | **Boletín Oficial de Canarias (BOC)** | Boletín Autonómico | https://www.gobiernodecanarias.org/boc/ | Diario (Lunes a Viernes) | — |
 | **AFT · Administración Tributaria y Financiera** | Funcionario TL (acceso libre) | https://www.gobiernodecanarias.org/administracionespublicas/funcionpublica/acceso/convocatorias-en-curso/2026/Acceso_libre/ficha/ADMINISTRACION-TRIBUTARIA-Y-FINANCIERA-Turno-Libre/ | Mensual (Lista de reserva) | `gobcan_aft_a1_2026` |
+| **ATC · Agentes de Tributos (OPE 2024)** | Subgrupo C1 (6 plazas) | https://www3.gobiernodecanarias.org/tributos/atc/w/agentes-de-tributos-grupo-c-subgrupo-c1-ope-2024?ida=108891251&prnt=992-1014-768-1656 | Diario | `gobcan_atc_agentes_c1_2024` |
 | **Boletín Oficial de la Provincia (BOP)** | Boletín Provincial | https://www.boplaspalmas.net/nbop2/index.php | Lunes, Miércoles y Viernes | — |
 | **Cabildo de Gran Canaria** | Portal de Empleo Público | https://cabildo.grancanaria.com/ciu/empleo-publico | Periódico | `cabildo_gc_procesos_vigilados` |
 | **Cabildo de Gran Canaria (Tablón)** | Tablón de Anuncios (Sede) | https://sede.grancanaria.com/tablon-de-anuncios | Diario | `cabildo_gc_procesos_vigilados` |

@@ -3,12 +3,45 @@
   "fecha_legible": "2026-11-18",
   "ia_activa": true,
   "resumen": {
-    "total_procesos": 4,
+    "total_procesos": 12,
     "total_fuentes": 18,
     "fuentes_ok": 15,
     "novedades_recientes": 0
   },
   "procesos": [
+    {
+      "id": "gobcan_atc_agentes_c1_2024",
+      "archivo": "fichas/gobcan_atc_agentes_c1_2024.md",
+      "titulo": "Agentes de Tributos · ATC (OPE 2024, 6 plazas)",
+      "administracion": "Gobierno de Canarias",
+      "nivel_prioridad": 1,
+      "organismo": "Agencia Tributaria Canaria (ATC)",
+      "cuerpo": "Agentes de Tributos (Subgrupo C1 · OPE 2024)",
+      "grupo": "C1",
+      "sistema": "Oposición / Turno Libre",
+      "estado": "Celebrada primera parte del ejercicio único (publicada plantilla); a la espera de calificaciones",
+      "url_portal": "https://www3.gobiernodecanarias.org/tributos/atc/w/agentes-de-tributos-grupo-c-subgrupo-c1-ope-2024?ida=108891251&prnt=992-1014-768-1656",
+      "ultimo_documento_url": "https://www3.gobiernodecanarias.org/tributos/atc/documents/65729/249149/PLANTILLA+RESPUESTAS+TEST+B+%281%29.pdf/565b4cbe-af50-dc3e-99ac-abb978e0fbf9?t=1794221587155",
+      "ultimo_documento_titulo": "Respuestas correctas del cuestionario tipo test (1.ª parte ejercicio único)",
+      "ultimo_documento_fecha": "2026-11-11",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "Agencia Tributaria Canaria",
+        "Agentes de Tributos",
+        "ATC",
+        "OPE 2024"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Convocatoria de 6 plazas de Agentes de Tributos (Grupo C, Subgrupo C1, OPE 2024) en la Agencia Tributaria Canaria.",
+      "historial": [
+        "2026-11-11: Publicada la plantilla de respuestas correctas del cuestionario tipo test (plazo de alegaciones del 10 al 12 de noviembre de 2026).",
+        "2026-11-09: Publicado el enunciado y las instrucciones del ejercicio único obligatorio.",
+        "2026-11-06: Publicados los lugares de examen y distribución de aspirantes.",
+        "2026-06-01: Publicada la convocatoria oficial en el BOC."
+      ],
+      "situacion_actual": "Se ha celebrado la primera parte del ejercicio único, publicado la plantilla de respuestas correctas el 11/11/2026 y finalizado el plazo de alegaciones el 12/11/2026. El proceso queda a la espera de las calificaciones provisionales."
+    },
     {
       "id": "gobcan_aft_a1_2026",
       "archivo": "fichas/gobcan_aft_a1_2026.md",
@@ -57,11 +90,11 @@
       "cuerpo": "Técnico/a de Gestión Administrativa y Digital",
       "grupo": "A1 / A2",
       "sistema": "Proceso selectivo",
-      "estado": "Sin anuncios publicados en tablón; a la espera de convocatoria o lista",
+      "estado": "Publicadas bases y convocatoria en el BOP (16/11/2026); plazo de instancias abierto",
       "url_portal": "https://ferrocarrilesgrancanaria.sedelectronica.es/info.0",
-      "ultimo_documento_url": "https://ferrocarrilesgrancanaria.sedelectronica.es/board",
-      "ultimo_documento_titulo": "Tablón de anuncios de la Sede Electrónica (AUTGC)",
-      "ultimo_documento_fecha": "2026-11-17",
+      "ultimo_documento_url": "https://www.boplaspalmas.net/boletines/2026/16-11-26/16-11-26.pdf",
+      "ultimo_documento_titulo": "Bases y convocatoria 1 plaza Técnico/a de Gestión Administrativa y Digital (BOP 16/11/2026)",
+      "ultimo_documento_fecha": "2026-11-16",
       "fecha_examen": "",
       "hora_llamamiento": "",
       "keywords": [
@@ -70,76 +103,286 @@
         "Gestión Administrativa y Digital",
         "ferrocarrilesgrancanaria"
       ],
-      "ultima_revision": "2026-11-17",
-      "descripcion": "Proceso selectivo para plaza/puesto de Técnico/a de Gestión Administrativa y Digital en la Autoridad Única del Transporte de Gran Canaria (organismo vinculado al Cabildo de Gran Canaria).",
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Proceso selectivo para 1 plaza de Técnico/a de Gestión Administrativa y Digital en la Autoridad Única del Transporte de Gran Canaria (organismo vinculado al Cabildo de Gran Canaria).",
       "historial": [
-        "2026-11-17: Ficha inicializada en Buscaopos a partir de `webs.md`."
+        "2026-11-16: Publicadas en el BOP de Las Palmas las bases y convocatoria del proceso selectivo para 1 plaza de Técnico/a de Gestión Administrativa y Digital."
       ],
-      "situacion_actual": "En vigilancia diaria en la sede electrónica de la AUTGC y en el BOP de Las Palmas para detectar cualquier novedad, requerimiento o publicación de listas y pruebas."
+      "situacion_actual": "Publicadas las bases y convocatoria en el BOP de Las Palmas el 16/11/2026. El proceso queda a la espera del término del plazo de presentación de instancias y de la lista provisional de admitidos y excluidos."
     },
     {
-      "id": "cabildo_gc_procesos_vigilados",
-      "archivo": "fichas/cabildo_gc_procesos_vigilados.md",
-      "titulo": "Convocatorias Vigiladas · Cabildo de Gran Canaria",
+      "id": "cabildo_a1_tag_5_plazas",
+      "archivo": "fichas/cabildo_a1_tag_5_plazas.md",
+      "titulo": "A1 TAG · Cabildo de Gran Canaria (5 plazas · BOC 12-12-25)",
       "administracion": "Cabildo de Gran Canaria",
       "nivel_prioridad": 2,
       "organismo": "Cabildo de Gran Canaria",
-      "cuerpo": "Cuerpos Técnicos A1 / A2 / C1 (4 procesos vigilados)",
-      "grupo": "A1 / A2 / C1",
-      "sistema": "Turno Libre / Concurso-Oposición",
-      "estado": "A la espera de nuevas resoluciones en tablón del Cabildo y BOP",
-      "url_portal": "https://sede.grancanaria.com/tablon-de-anuncios",
-      "ultimo_documento_url": "",
-      "ultimo_documento_titulo": "",
-      "ultimo_documento_fecha": "",
+      "cuerpo": "Técnico/a de Administración General (TAG · Subgrupo A1)",
+      "grupo": "A1",
+      "sistema": "Turno Libre",
+      "estado": "Actualizado temario (Ley de Cabildos); a la espera de nuevas resoluciones",
+      "url_portal": "https://cabildo.grancanaria.com/ciu/empleo-publico?articleId=7406441",
+      "ultimo_documento_url": "https://cabildo.grancanaria.com/documents/38405/3444311/Nota+Info_NUEVA+LEY+DE+CABILDOS.report.pdf/22beebee-03a8-1256-ab7c-44ad6991ba0a?t=1784794990975",
+      "ultimo_documento_titulo": "Nota informativa sobre actualización del tema de la Ley de Cabildos",
+      "ultimo_documento_fecha": "2026-11-16",
       "fecha_examen": "",
       "hora_llamamiento": "",
       "keywords": [
         "Cabildo de Gran Canaria",
-        "empleo público",
-        "técnico",
-        "administración general",
-        "admitidos"
+        "TAG",
+        "5 plazas",
+        "Ley de Cabildos"
       ],
-      "ultima_revision": "2026-11-17",
-      "descripcion": "Seguimiento de las convocatorias de empleo público del Cabildo de Gran Canaria (grupos A1, A2 y C1). Según la evolución de cada cuerpo, se desglosarán en fichas independientes cuando se publiquen nuevos actos en el BOP de Las Palmas o en el portal del Cabildo.",
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Proceso selectivo para cubrir 5 plazas de Técnico/a de Administración General (Subgrupo A1) en el Cabildo de Gran Canaria (convocatoria BOC 12-12-2025).",
       "historial": [
-        "2026-11-17: Ficha inicializada en Buscaopos a partir de `webs.md` (4 procesos vigilados)."
+        "2026: Publicada nota informativa sobre la actualización del tema de la Ley de Cabildos.",
+        "2025-12-12: Publicación de la convocatoria en el BOC."
       ],
-      "situacion_actual": "Portal en vigilancia diaria para detectar nuevas publicaciones de listas de admitidos/excluidos, tribunales, fechas de examen y resoluciones en el BOP de Las Palmas y en la sede del Cabildo."
+      "situacion_actual": "El último documento publicado corresponde a la nota informativa sobre actualización del tema de la Ley de Cabildos. El proceso queda a la espera de las próximas resoluciones (listas de admitidos/excluidos o convocatoria de ejercicio)."
+    },
+    {
+      "id": "cabildo_a1_tag_9_plazas",
+      "archivo": "fichas/cabildo_a1_tag_9_plazas.md",
+      "titulo": "A1 TAG · Cabildo de Gran Canaria (9 plazas)",
+      "administracion": "Cabildo de Gran Canaria",
+      "nivel_prioridad": 2,
+      "organismo": "Cabildo de Gran Canaria",
+      "cuerpo": "Técnico/a de Administración General (TAG · Subgrupo A1)",
+      "grupo": "A1",
+      "sistema": "Turno Libre",
+      "estado": "Aplazada la celebración del tercer ejercicio (práctico); a la espera de nueva fecha",
+      "url_portal": "https://cabildo.grancanaria.com/ciu/empleo-publico?articleId=3816627",
+      "ultimo_documento_url": "https://cabildo.grancanaria.com/documents/38405/3816608/NOTA+INFORMATIVA_aplaz+3er+exa.report.pdf/1d154e56-6712-4c7a-49aa-7b06cbb1f2b9?t=1794397819250",
+      "ultimo_documento_titulo": "Nota informativa sobre cambio de fecha de celebración del ejercicio práctico",
+      "ultimo_documento_fecha": "2026-11-16",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "Cabildo de Gran Canaria",
+        "TAG",
+        "9 plazas",
+        "ejercicio práctico"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Proceso selectivo para cubrir 9 plazas de Técnico/a de Administración General (Subgrupo A1) en el Cabildo de Gran Canaria.",
+      "historial": [
+        "2026-11: Publicada nota informativa sobre el cambio/aplazamiento de fecha de celebración del tercer ejercicio (ejercicio práctico)."
+      ],
+      "situacion_actual": "Conforme al último documento publicado (Nota informativa sobre el cambio de fecha del ejercicio práctico), el tercer ejercicio ha quedado aplazado y el proceso está a la espera de la nueva fecha y llamamiento."
+    },
+    {
+      "id": "cabildo_a2_tecnico_gestion_2_plazas",
+      "archivo": "fichas/cabildo_a2_tecnico_gestion_2_plazas.md",
+      "titulo": "A2 Técnico/a de Gestión · Cabildo de Gran Canaria (2 plazas · OEP 2023)",
+      "administracion": "Cabildo de Gran Canaria",
+      "nivel_prioridad": 2,
+      "organismo": "Cabildo de Gran Canaria",
+      "cuerpo": "Técnico/a de Gestión (Subgrupo A2 · OEP 2023)",
+      "grupo": "A2",
+      "sistema": "Proceso selectivo",
+      "estado": "Publicadas bases específicas en el BOP (21/09/2026); a la espera de convocatoria / admitidos",
+      "url_portal": "https://sede.grancanaria.com/tablon-de-anuncios",
+      "ultimo_documento_url": "https://www.boplaspalmas.net/boletines/2026/21-09-26/21-09-26.pdf",
+      "ultimo_documento_titulo": "Bases específicas de la convocatoria de 2 plazas de Técnico/a de Gestión (OEP 2023)",
+      "ultimo_documento_fecha": "2026-09-21",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "Cabildo de Gran Canaria",
+        "Técnico de Gestión",
+        "2 plazas",
+        "OEP 2023"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Convocatoria de 2 plazas de Técnico/a de Gestión (Subgrupo A2, OEP 2023) en el Cabildo de Gran Canaria.",
+      "historial": [
+        "2026-09-21: Publicadas en el BOP de Las Palmas las bases específicas de la convocatoria de 2 plazas de Técnico/a de Gestión (OEP 2023)."
+      ],
+      "situacion_actual": "Publicadas las bases específicas el 21/09/2026 en el BOP de Las Palmas. El proceso queda a la espera de la apertura/cierre de instancias y de la lista provisional de aspirantes admitidos y excluidos."
+    },
+    {
+      "id": "cabildo_c1_11_plazas",
+      "archivo": "fichas/cabildo_c1_11_plazas.md",
+      "titulo": "C1 Administrativo · Cabildo de Gran Canaria (11 plazas)",
+      "administracion": "Cabildo de Gran Canaria",
+      "nivel_prioridad": 2,
+      "organismo": "Cabildo de Gran Canaria",
+      "cuerpo": "Administrativo/a (Subgrupo C1)",
+      "grupo": "C1",
+      "sistema": "Turno Libre",
+      "estado": "Publicada lista definitiva, Tribunal y fecha de examen (BOP 09/11/2026)",
+      "url_portal": "https://cabildo.grancanaria.com/ciu/empleo-publico?articleId=3877323",
+      "ultimo_documento_url": "https://cabildo.grancanaria.com/documents/38405/3877377/BOP+LAS+PAL+%2809-11-2026%29.pdf/6dee45a1-e3bc-4bb9-5b19-ec33112c9083?t=1794210914020",
+      "ultimo_documento_titulo": "Listado definitivo de admitidos/as, Tribunal y fecha de examen (BOP 09/11/2026)",
+      "ultimo_documento_fecha": "2026-11-09",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "Cabildo de Gran Canaria",
+        "C1",
+        "11 plazas",
+        "Administrativo"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Proceso selectivo para cubrir 11 plazas del Subgrupo C1 en el Cabildo de Gran Canaria.",
+      "historial": [
+        "2026-11-09: Publicado en el BOP el listado definitivo de admitidos y excluidos, designación del Tribunal Calificador y fecha de examen."
+      ],
+      "situacion_actual": "Conforme al último documento del 09/11/2026, ya se ha publicado la lista definitiva de admitidos/excluidos, el Tribunal Calificador y la fecha del ejercicio."
+    },
+    {
+      "id": "acc_a1_tecnicos_auditoria_lista",
+      "archivo": "fichas/acc_a1_tecnicos_auditoria_lista.md",
+      "titulo": "Lista de Empleo Técnicos de Auditoría (A1) · Audiencia de Cuentas",
+      "administracion": "Ayuntamientos y Otros",
+      "nivel_prioridad": 3,
+      "organismo": "Audiencia de Cuentas de Canarias",
+      "cuerpo": "Cuerpo de Técnicos · Escala de Técnicos de Auditoría (A1)",
+      "grupo": "A1",
+      "sistema": "Concurso-oposición (Lista de empleo interinos)",
+      "estado": "Concedida ampliación de plazo (Resolución 31/10/2026); a la espera de próximas resoluciones",
+      "url_portal": "https://acuentascanarias.org/concurso-oposicion-para-la-constitucion-de-una-lista-de-empleo-especifica-para-el-nombramiento-de-personal-funcionario-interino-del-cuerpo-detecnicos-escala-de-tecnicos-de-auditoria-grupo-a-subgrup/",
+      "ultimo_documento_url": "https://acuentascanarias.org/wp-content/uploads/2026/11/20261031-RESOLUCI_N-PRESIDENTE-ACC-AMPLIACI_N-DE-PLAZO.pdf",
+      "ultimo_documento_titulo": "Resolución de ampliación de plazo (Base 9.3) - 31/10/2026",
+      "ultimo_documento_fecha": "2026-10-31",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "Audiencia de Cuentas",
+        "Técnicos de Auditoría",
+        "lista de empleo",
+        "A1"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Concurso-oposición para la constitución de una lista de empleo específica de personal funcionario interino del Cuerpo de Técnicos, Escala de Técnicos de Auditoría (Grupo A, Subgrupo A1), de la Audiencia de Cuentas de Canarias.",
+      "historial": [
+        "2026-10-31: Resolución del Presidente concediendo la ampliación de plazo prevista en la base 9.3 de la convocatoria.",
+        "2026-04-15: Publicación de la convocatoria en el BOC nº 72."
+      ],
+      "situacion_actual": "El último documento publicado el 31/10/2026 concede la ampliación de plazo prevista en la base 9.3. El proceso queda a la espera de la resolución correspondiente tras dicho plazo."
+    },
+    {
+      "id": "lpgc_c1_aux_administrativo",
+      "archivo": "fichas/lpgc_c1_aux_administrativo.md",
+      "titulo": "Auxiliar Administrativo · Ayuntamiento de Las Palmas de GC",
+      "administracion": "Ayuntamientos y Otros",
+      "nivel_prioridad": 3,
+      "organismo": "Ayuntamiento de Las Palmas de Gran Canaria",
+      "cuerpo": "Auxiliar Administrativo (Subgrupo C1 / C2)",
+      "grupo": "C1",
+      "sistema": "Turno Libre",
+      "estado": "A la espera de publicaciones de trámites en el portal municipal y BOP",
+      "url_portal": "https://www.laspalmasgc.es/es/ayuntamiento/empleo-publico/convocatorias-en-curso/",
+      "ultimo_documento_url": "https://www.laspalmasgc.es/es/ayuntamiento/empleo-publico/convocatorias-en-curso/",
+      "ultimo_documento_titulo": "Convocatorias en curso · Ayuntamiento LPGC",
+      "ultimo_documento_fecha": "2026-11-18",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "Las Palmas de Gran Canaria",
+        "Auxiliar Administrativo",
+        "convocatorias en curso"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Convocatoria de Auxiliar Administrativo del Ayuntamiento de Las Palmas de Gran Canaria.",
+      "historial": [
+        "2026-11-18: Ficha incorporada desde `SEGUIMIENTO_ANTIG.md`."
+      ],
+      "situacion_actual": "Convocatoria incorporada al seguimiento diario del portal de Empleo Público del Ayuntamiento de Las Palmas de Gran Canaria y del BOP de Las Palmas, a la espera de nuevos trámites o resoluciones."
+    },
+    {
+      "id": "sbt_a1_lista_tag_sur",
+      "archivo": "fichas/sbt_a1_lista_tag_sur.md",
+      "titulo": "Lista de Reserva TAG · San Bartolomé de Tirajana",
+      "administracion": "Ayuntamientos y Otros",
+      "nivel_prioridad": 3,
+      "organismo": "Ayuntamiento de San Bartolomé de Tirajana",
+      "cuerpo": "Técnico/a de Administración General (Lista de Reserva · A1)",
+      "grupo": "A1",
+      "sistema": "Lista de reserva",
+      "estado": "Publicada lista provisional de admitidos/excluidos (13/10/2026); a la espera de lista definitiva",
+      "url_portal": "https://www.maspalomas.com/oposicionesyempleo",
+      "ultimo_documento_url": "https://www.maspalomas.com/images/stories/documents/TablonAnuncios/Anuncios/2026/20261013_RRHH_BOP_LAS_PALMAS_anuncio_listado_provisional_BolsaTrabajo_TAG.pdf",
+      "ultimo_documento_titulo": "Lista provisional de admitidos/as y excluidos/as Bolsa de Trabajo TAG (13/10/2026)",
+      "ultimo_documento_fecha": "2026-10-13",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "San Bartolomé de Tirajana",
+        "Lista de Reserva",
+        "BolsaTrabajo_TAG",
+        "TAG"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Proceso selectivo para la configuración de una Lista de Reserva de Técnico/a de Administración General (TAG, Subgrupo A1) en el Ayuntamiento de San Bartolomé de Tirajana.",
+      "historial": [
+        "2026-10-13: Publicada en el tablón y BOP la lista provisional de aspirantes admitidos y excluidos.",
+        "2026-07-03: Publicadas en el BOP las bases específicas para la lista de reserva adicional de TAG."
+      ],
+      "situacion_actual": "Publicada la lista provisional de admitidos y excluidos el 13/10/2026. El proceso queda a la espera de la lista definitiva de admitidos/excluidos, designación del tribunal y fecha del ejercicio."
+    },
+    {
+      "id": "santaluciagc_a1_tag_7_plazas",
+      "archivo": "fichas/santaluciagc_a1_tag_7_plazas.md",
+      "titulo": "TAG 7 Plazas · Ayuntamiento de Santa Lucía de Tirajana",
+      "administracion": "Ayuntamientos y Otros",
+      "nivel_prioridad": 3,
+      "organismo": "Ayuntamiento de Santa Lucía de Tirajana",
+      "cuerpo": "Técnico/a de Administración General (Subgrupo A1)",
+      "grupo": "A1",
+      "sistema": "Turno Libre",
+      "estado": "Publicadas bases y solicitud de participación; a la espera de lista provisional de admitidos",
+      "url_portal": "https://www.santaluciagc.com/empleo_publico/7-plazas-de-tecnico-de-administracion-general/",
+      "ultimo_documento_url": "https://www.santaluciagc.com/wp-content/uploads/2026/07/SOLICITUD-DE-PARTICIPACION-ANEXO-editable.pdf",
+      "ultimo_documento_titulo": "Solicitud de participación y declaración responsable (Anexo I y II)",
+      "ultimo_documento_fecha": "2026-07-06",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "Santa Lucía de Tirajana",
+        "Técnico de Administración General",
+        "7 plazas",
+        "TAG"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Convocatoria de 7 plazas de Técnico/a de Administración General (Subgrupo A1) en el Ayuntamiento de Santa Lucía de Tirajana.",
+      "historial": [
+        "2026-07-06: Publicadas bases específicas en el BOP de Las Palmas y anexos editables de solicitud de participación."
+      ],
+      "situacion_actual": "Publicadas las bases específicas y los modelos de solicitud de participación (Anexos I y II). El proceso queda a la espera de la lista provisional de personas aspirantes admitidas y excluidas."
     },
     {
       "id": "ulpgc_a1_escala_tecnica",
       "archivo": "fichas/ulpgc_a1_escala_tecnica.md",
-      "titulo": "Escala Técnica (A1) · ULPGC Funcionario TL",
+      "titulo": "A1 LADE · Escala Técnica ULPGC (Económicas / Empresariales / ADE)",
       "administracion": "Ayuntamientos y Otros",
       "nivel_prioridad": 3,
       "organismo": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
-      "cuerpo": "Escala Técnica de Gestión / Administración (Subgrupo A1)",
+      "cuerpo": "Escala Técnica (Subgrupo A1 · Económicas, Empresariales o ADE)",
       "grupo": "A1",
-      "sistema": "Turno Libre",
+      "sistema": "Concurso-Oposición (Turno Libre)",
       "estado": "Publicada lista provisional de admitidos/excluidos y Tribunal; a la espera de lista definitiva",
-      "url_portal": "https://www.ulpgc.es/spersonal-pas/convocatoriasdepromocioni",
-      "ultimo_documento_url": "https://www.ulpgc.es/sites/default/files/ArchivosULPGC/spersonal-pas/04_tribunal_rect._a1.pdf",
-      "ultimo_documento_titulo": "Rectificación del nombramiento del Tribunal Calificador (Escala Técnica A1)",
+      "url_portal": "https://www.ulpgc.es/spersonal-pas/escala-tecnica-a1-titulacion-licenciatura-o-grado-economicas-empresariales-o-ade",
+      "ultimo_documento_url": "https://www.ulpgc.es/spersonal-pas/escala-tecnica-a1-titulacion-licenciatura-o-grado-economicas-empresariales-o-ade",
+      "ultimo_documento_titulo": "Portal Escala Técnica A1 (Económicas / Empresariales / ADE) · ULPGC",
       "ultimo_documento_fecha": "2026-11-04",
       "fecha_examen": "",
       "hora_llamamiento": "",
       "keywords": [
         "ULPGC",
         "Escala Técnica",
-        "Personal de Administración y Servicios",
-        "PAS"
+        "ADE",
+        "Económicas"
       ],
-      "ultima_revision": "2026-11-17",
-      "descripcion": "Convocatoria de acceso libre para la Escala Técnica (Subgrupo A1) del Personal de Administración y Servicios (PAS) funcionario de la Universidad de Las Palmas de Gran Canaria (ramas Derecho y Licenciatura/Grado).",
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Convocatoria de acceso libre (concurso-oposición, 2 plazas) de la Escala Técnica (Grupo A, Subgrupo A1) con requisito de titulación en Económicas, Empresariales o ADE en la ULPGC.",
       "historial": [
-        "2026-11-04: Publicada la rectificación del nombramiento del Tribunal Calificador (Lic./Grado) y nombramiento del Tribunal (Derecho).",
-        "2026: Publicadas las listas provisionales de aspirantes admitidos y excluidos (Derecho y Lic./Grado).",
-        "2026: Publicada la ampliación del plazo para el listado provisional de admitidos y excluidos.",
-        "2026: Publicadas las bases de la convocatoria en el BOC (nº 120) y anuncio en el BOE."
+        "2026-11-04: Publicado el nombramiento de los miembros del Tribunal Calificador.",
+        "2026: Publicada la lista provisional de aspirantes admitidos y excluidos.",
+        "2026-06-17: Publicadas las bases de la convocatoria en el BOC nº 120."
       ],
-      "situacion_actual": "Se han publicado las listas provisionales de aspirantes admitidos y excluidos y el nombramiento del Tribunal Calificador (último documento: Rectificación del nombramiento del Tribunal Calificador, actualizado en la web el 04/11/2026). El proceso queda a la espera de la lista definitiva de admitidos y excluidos y de la fecha del primer ejercicio."
+      "situacion_actual": "Se ha publicado la lista provisional de aspirantes admitidos y excluidos y el nombramiento del Tribunal Calificador. El proceso queda a la espera de la lista definitiva de admitidos y excluidos y de la fecha del primer ejercicio."
     }
   ],
   "novedades": [],
