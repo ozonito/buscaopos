@@ -219,7 +219,22 @@ body {
 
 .situacion-box p {
   margin: 0;
-  font-size: 0.88rem;
+}
+
+.situacion-headline {
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin-bottom: 0.3rem !important;
+  line-height: 1.3;
+}
+
+.situacion-detail {
+  font-size: 0.79rem;
+  color: var(--text-muted);
+  line-height: 1.4;
 }
 
 .card-actions {

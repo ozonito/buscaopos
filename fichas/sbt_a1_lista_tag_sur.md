@@ -2,7 +2,7 @@
 id: sbt_a1_lista_tag_sur
 titulo: "Lista de Reserva TAG · San Bartolomé de Tirajana"
 administracion: "Ayuntamientos y Otros"
-nivel_prioridad: 3
+nivel_prioridad: 4
 organismo: "Ayuntamiento de San Bartolomé de Tirajana"
 cuerpo: "Técnico/a de Administración General (Lista de Reserva · A1)"
 grupo: "A1"

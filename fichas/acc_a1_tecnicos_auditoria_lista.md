@@ -2,7 +2,7 @@
 id: acc_a1_tecnicos_auditoria_lista
 titulo: "Lista de Empleo Técnicos de Auditoría (A1) · Audiencia de Cuentas"
 administracion: "Ayuntamientos y Otros"
-nivel_prioridad: 3
+nivel_prioridad: 4
 organismo: "Audiencia de Cuentas de Canarias"
 cuerpo: "Cuerpo de Técnicos · Escala de Técnicos de Auditoría (A1)"
 grupo: "A1"

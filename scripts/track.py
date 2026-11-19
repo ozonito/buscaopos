@@ -360,15 +360,16 @@ Tu tarea es analizar EN PROFUNDIDAD las novedades y documentos publicados hoy en
 
 REGLAS OBLIGATORIAS:
 1. Si una ficha tiene "solo_lista_reserva": true, NO generes novedades ni actualizaciones salvo que se publique explícitamente la LISTA DE RESERVA.
-1. El campo "nuevo_estado" NO puede referirse nunca a la tarea del bot (PROHIBIDO usar "En seguimiento", "Vigilado", "Rastreando", etc.). Debe reflejar la FASE ADMINISTRATIVA REAL de la convocatoria, por ejemplo:
-   - "A la espera del término del plazo de presentación de instancias"
-   - "Publicada relación provisional de admitidos/excluidos; a la espera de lista definitiva"
-   - "Publicada relación definitiva de admitidos; a la espera de fecha de examen"
-   - "Convocado primer/segundo/tercer ejercicio (fecha y llamamiento publicados)"
-   - "A la espera de las calificaciones provisionales"
-   - "A la espera de las calificaciones definitivas"
-   - "En fase de concurso / valoración de méritos"
-   - "Pendiente de nombramiento"
+1. El campo "nuevo_estado" NO puede referirse nunca a la tarea del bot (PROHIBIDO usar "En seguimiento", "Vigilado", "Rastreando", etc.). Debe ser un titular breve, claro e intuitivo de la FASE ADMINISTRATIVA REAL (se mostrará destacado al comienzo del cuadro de situación), por ejemplo:
+   - "PLAZO DE INSTANCIAS ABIERTO"
+   - "LISTA PROVISIONAL DE ADMITIDOS · A LA ESPERA DE DEFINITIVA"
+   - "LISTA DEFINITIVA · PENDIENTE DE FECHA DE EXAMEN"
+   - "EXAMEN CONVOCADO (FECHA Y LLAMAMIENTO)"
+   - "PENDIENTE DE CALIFICACIONES PROVISIONALES"
+   - "CALIFICACIONES PROVISIONALES · PLAZO DE ALEGACIONES"
+   - "PENDIENTE DE CALIFICACIONES DEFINITIVAS"
+   - "FASE DE CONCURSO / VALORACIÓN DE MÉRITOS"
+   - "PENDIENTE DE NOMBRAMIENTO"
 2. Analiza en profundidad cada documento publicado, ordena los hitos por fecha y haz especial referencia al ÚLTIMO documento publicado en "nueva_situacion_actual", devolviendo su URL directa en "ultimo_documento_url".
 3. Si en algún documento se estima o convoca una fecha de examen, extrae "fecha_examen" (YYYY-MM-DD) y "hora_llamamiento" (ej. "09:30").
 

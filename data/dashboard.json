@@ -232,11 +232,43 @@
       "situacion_actual": "Conforme al último documento del 09/11/2026, ya se ha publicado la lista definitiva de admitidos/excluidos, el Tribunal Calificador y la fecha del ejercicio."
     },
     {
+      "id": "ulpgc_a1_escala_tecnica",
+      "archivo": "fichas/ulpgc_a1_escala_tecnica.md",
+      "titulo": "A1 LADE · Escala Técnica ULPGC (Económicas / Empresariales / ADE)",
+      "administracion": "ULPGC",
+      "nivel_prioridad": 3,
+      "organismo": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
+      "cuerpo": "Escala Técnica (Subgrupo A1 · Económicas, Empresariales o ADE)",
+      "grupo": "A1",
+      "sistema": "Concurso-Oposición (Turno Libre)",
+      "estado": "Publicada lista provisional de admitidos/excluidos y Tribunal; a la espera de lista definitiva",
+      "url_portal": "https://www.ulpgc.es/spersonal-pas/escala-tecnica-a1-titulacion-licenciatura-o-grado-economicas-empresariales-o-ade",
+      "ultimo_documento_url": "https://www.ulpgc.es/spersonal-pas/escala-tecnica-a1-titulacion-licenciatura-o-grado-economicas-empresariales-o-ade",
+      "ultimo_documento_titulo": "Portal Escala Técnica A1 (Económicas / Empresariales / ADE) · ULPGC",
+      "ultimo_documento_fecha": "2026-11-04",
+      "fecha_examen": "",
+      "hora_llamamiento": "",
+      "keywords": [
+        "ULPGC",
+        "Escala Técnica",
+        "ADE",
+        "Económicas"
+      ],
+      "ultima_revision": "2026-11-18",
+      "descripcion": "Convocatoria de acceso libre (concurso-oposición, 2 plazas) de la Escala Técnica (Grupo A, Subgrupo A1) con requisito de titulación en Económicas, Empresariales o ADE en la ULPGC.",
+      "historial": [
+        "2026-11-04: Publicado el nombramiento de los miembros del Tribunal Calificador.",
+        "2026: Publicada la lista provisional de aspirantes admitidos y excluidos.",
+        "2026-06-17: Publicadas las bases de la convocatoria en el BOC nº 120."
+      ],
+      "situacion_actual": "Se ha publicado la lista provisional de aspirantes admitidos y excluidos y el nombramiento del Tribunal Calificador. El proceso queda a la espera de la lista definitiva de admitidos y excluidos y de la fecha del primer ejercicio."
+    },
+    {
       "id": "acc_a1_tecnicos_auditoria_lista",
       "archivo": "fichas/acc_a1_tecnicos_auditoria_lista.md",
       "titulo": "Lista de Empleo Técnicos de Auditoría (A1) · Audiencia de Cuentas",
       "administracion": "Ayuntamientos y Otros",
-      "nivel_prioridad": 3,
+      "nivel_prioridad": 4,
       "organismo": "Audiencia de Cuentas de Canarias",
       "cuerpo": "Cuerpo de Técnicos · Escala de Técnicos de Auditoría (A1)",
       "grupo": "A1",
@@ -267,7 +299,7 @@
       "archivo": "fichas/lpgc_c1_aux_administrativo.md",
       "titulo": "Auxiliar Administrativo · Ayuntamiento de Las Palmas de GC",
       "administracion": "Ayuntamientos y Otros",
-      "nivel_prioridad": 3,
+      "nivel_prioridad": 4,
       "organismo": "Ayuntamiento de Las Palmas de Gran Canaria",
       "cuerpo": "Auxiliar Administrativo (Subgrupo C1 / C2)",
       "grupo": "C1",
@@ -296,7 +328,7 @@
       "archivo": "fichas/sbt_a1_lista_tag_sur.md",
       "titulo": "Lista de Reserva TAG · San Bartolomé de Tirajana",
       "administracion": "Ayuntamientos y Otros",
-      "nivel_prioridad": 3,
+      "nivel_prioridad": 4,
       "organismo": "Ayuntamiento de San Bartolomé de Tirajana",
       "cuerpo": "Técnico/a de Administración General (Lista de Reserva · A1)",
       "grupo": "A1",
@@ -327,7 +359,7 @@
       "archivo": "fichas/santaluciagc_a1_tag_7_plazas.md",
       "titulo": "TAG 7 Plazas · Ayuntamiento de Santa Lucía de Tirajana",
       "administracion": "Ayuntamientos y Otros",
-      "nivel_prioridad": 3,
+      "nivel_prioridad": 4,
       "organismo": "Ayuntamiento de Santa Lucía de Tirajana",
       "cuerpo": "Técnico/a de Administración General (Subgrupo A1)",
       "grupo": "A1",
@@ -351,38 +383,6 @@
         "2026-07-06: Publicadas bases específicas en el BOP de Las Palmas y anexos editables de solicitud de participación."
       ],
       "situacion_actual": "Publicadas las bases específicas y los modelos de solicitud de participación (Anexos I y II). El proceso queda a la espera de la lista provisional de personas aspirantes admitidas y excluidas."
-    },
-    {
-      "id": "ulpgc_a1_escala_tecnica",
-      "archivo": "fichas/ulpgc_a1_escala_tecnica.md",
-      "titulo": "A1 LADE · Escala Técnica ULPGC (Económicas / Empresariales / ADE)",
-      "administracion": "Ayuntamientos y Otros",
-      "nivel_prioridad": 3,
-      "organismo": "Universidad de Las Palmas de Gran Canaria (ULPGC)",
-      "cuerpo": "Escala Técnica (Subgrupo A1 · Económicas, Empresariales o ADE)",
-      "grupo": "A1",
-      "sistema": "Concurso-Oposición (Turno Libre)",
-      "estado": "Publicada lista provisional de admitidos/excluidos y Tribunal; a la espera de lista definitiva",
-      "url_portal": "https://www.ulpgc.es/spersonal-pas/escala-tecnica-a1-titulacion-licenciatura-o-grado-economicas-empresariales-o-ade",
-      "ultimo_documento_url": "https://www.ulpgc.es/spersonal-pas/escala-tecnica-a1-titulacion-licenciatura-o-grado-economicas-empresariales-o-ade",
-      "ultimo_documento_titulo": "Portal Escala Técnica A1 (Económicas / Empresariales / ADE) · ULPGC",
-      "ultimo_documento_fecha": "2026-11-04",
-      "fecha_examen": "",
-      "hora_llamamiento": "",
-      "keywords": [
-        "ULPGC",
-        "Escala Técnica",
-        "ADE",
-        "Económicas"
-      ],
-      "ultima_revision": "2026-11-18",
-      "descripcion": "Convocatoria de acceso libre (concurso-oposición, 2 plazas) de la Escala Técnica (Grupo A, Subgrupo A1) con requisito de titulación en Económicas, Empresariales o ADE en la ULPGC.",
-      "historial": [
-        "2026-11-04: Publicado el nombramiento de los miembros del Tribunal Calificador.",
-        "2026: Publicada la lista provisional de aspirantes admitidos y excluidos.",
-        "2026-06-17: Publicadas las bases de la convocatoria en el BOC nº 120."
-      ],
-      "situacion_actual": "Se ha publicado la lista provisional de aspirantes admitidos y excluidos y el nombramiento del Tribunal Calificador. El proceso queda a la espera de la lista definitiva de admitidos y excluidos y de la fecha del primer ejercicio."
     }
   ],
   "novedades": [],

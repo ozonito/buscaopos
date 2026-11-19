@@ -1,7 +1,7 @@
 ---
 id: ulpgc_a1_escala_tecnica
 titulo: "A1 LADE · Escala Técnica ULPGC (Económicas / Empresariales / ADE)"
-administracion: "Ayuntamientos y Otros"
+administracion: "ULPGC"
 nivel_prioridad: 3
 organismo: "Universidad de Las Palmas de Gran Canaria (ULPGC)"
 cuerpo: "Escala Técnica (Subgrupo A1 · Económicas, Empresariales o ADE)"

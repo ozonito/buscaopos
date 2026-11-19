@@ -2,7 +2,7 @@
 id: santaluciagc_a1_tag_7_plazas
 titulo: "TAG 7 Plazas · Ayuntamiento de Santa Lucía de Tirajana"
 administracion: "Ayuntamientos y Otros"
-nivel_prioridad: 3
+nivel_prioridad: 4
 organismo: "Ayuntamiento de Santa Lucía de Tirajana"
 cuerpo: "Técnico/a de Administración General (Subgrupo A1)"
 grupo: "A1"

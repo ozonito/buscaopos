@@ -2,7 +2,7 @@
 id: lpgc_c1_aux_administrativo
 titulo: "Auxiliar Administrativo · Ayuntamiento de Las Palmas de GC"
 administracion: "Ayuntamientos y Otros"
-nivel_prioridad: 3
+nivel_prioridad: 4
 organismo: "Ayuntamiento de Las Palmas de Gran Canaria"
 cuerpo: "Auxiliar Administrativo (Subgrupo C1 / C2)"
 grupo: "C1"

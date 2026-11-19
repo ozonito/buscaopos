@@ -112,12 +112,14 @@ def handle_nuevo_proceso(title: str, body: str, today_str: str) -> str:
     proceso = extract_field("Proceso / Plaza") or re.sub(r"^\[Nuevo proceso\]\s*", "", title).strip()
     web = extract_field("Web de la administración")
 
-    nivel = 3
+    nivel = 4
     admin = "Ayuntamientos y Otros"
     if "Nivel 1" in admin_raw or "Gobierno de Canarias" in admin_raw:
         nivel, admin = 1, "Gobierno de Canarias"
     elif "Nivel 2" in admin_raw or "Cabildo" in admin_raw:
         nivel, admin = 2, "Cabildo de Gran Canaria"
+    elif "Nivel 3" in admin_raw or "ULPGC" in admin_raw:
+        nivel, admin = 3, "ULPGC"
 
     fid = slugify(f"{organismo}_{grupo}_{proceso}")
     ficha_path = t.FICHAS_DIR / f"{fid}.md"

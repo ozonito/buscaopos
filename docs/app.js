@@ -3,7 +3,8 @@ const REPO_URL = "https://github.com/ozonito/buscaopos";
 const ADMIN_LEVELS = {
   1: { label: "1. Gobierno de Canarias", icon: "🏛️" },
   2: { label: "2. Cabildo de Gran Canaria", icon: "🏝️" },
-  3: { label: "3. Ayuntamientos y Otros", icon: "🏢" },
+  3: { label: "3. ULPGC", icon: "🎓" },
+  4: { label: "4. Ayuntamientos y Otros", icon: "🏢" },
 };
 
 let dashboardData = null;
@@ -60,15 +61,15 @@ function renderProcesos() {
     return;
   }
 
-  // Group strictly by priority level 1 -> 2 -> 3
-  const grouped = { 1: [], 2: [], 3: [] };
+  // Group strictly by priority level 1 -> 2 -> 3 -> 4
+  const grouped = { 1: [], 2: [], 3: [], 4: [] };
   filtered.forEach((p) => {
-    const lvl = grouped[p.nivel_prioridad] ? p.nivel_prioridad : 3;
+    const lvl = grouped[p.nivel_prioridad] ? p.nivel_prioridad : 4;
     grouped[lvl].push(p);
   });
 
   let html = "";
-  [1, 2, 3].forEach((lvl) => {
+  [1, 2, 3, 4].forEach((lvl) => {
     const items = grouped[lvl];
     if (!items.length) return;
     const meta = ADMIN_LEVELS[lvl];
@@ -170,7 +171,8 @@ function openModal(id) {
     </div>
     <div class="situacion-box">
       <h4>Situación actual del proceso selectivo</h4>
-      <p>${escapeHtml(p.situacion_actual || "Pendiente de actualización.")}</p>
+      <p class="situacion-headline">${escapeHtml(p.estado || "Pendiente de actualización")}</p>
+      <p class="situacion-detail">${escapeHtml(p.situacion_actual || "Pendiente de actualización.")}</p>
     </div>
   `;
 
