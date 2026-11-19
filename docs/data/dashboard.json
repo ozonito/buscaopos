@@ -1,11 +1,11 @@
 {
-  "ultima_actualizacion": "2026-11-18T17:12:35Z",
-  "fecha_legible": "2026-11-18",
+  "ultima_actualizacion": "2026-11-19T22:51:37Z",
+  "fecha_legible": "2026-11-19",
   "ia_activa": true,
   "resumen": {
     "total_procesos": 12,
-    "total_fuentes": 18,
-    "fuentes_ok": 15,
+    "total_fuentes": 19,
+    "fuentes_ok": 16,
     "novedades_recientes": 0
   },
   "procesos": [
@@ -396,7 +396,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "AFT · Administración Tributaria y Financiera",
@@ -407,7 +407,18 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-18 (próxima en 29d)"
+    },
+    {
+      "nombre": "ATC · Agentes de Tributos (OPE 2024)",
+      "ambito": "Subgrupo C1 (6 plazas)",
+      "url": "https://www3.gobiernodecanarias.org/tributos/atc/w/agentes-de-tributos-grupo-c-subgrupo-c1-ope-2024?ida=108891251&prnt=992-1014-768-1656",
+      "frecuencia": "Diario",
+      "ficha": "gobcan_atc_agentes_c1_2024",
+      "http_status": 200,
+      "estado_rastreo": "ok",
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Boletín Oficial de la Provincia (BOP)",
@@ -417,8 +428,8 @@
       "ficha": "—",
       "http_status": 200,
       "estado_rastreo": "ok",
-      "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "cambio_detectado": false,
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Cabildo de Gran Canaria",
@@ -429,7 +440,7 @@
       "http_status": 403,
       "estado_rastreo": "error",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Cabildo de Gran Canaria (Tablón)",
@@ -440,7 +451,7 @@
       "http_status": 403,
       "estado_rastreo": "error",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Autoridad Única del Transporte de Gran Canaria",
@@ -451,7 +462,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Ayuntamiento de Las Palmas de Gran Canaria",
@@ -462,7 +473,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Ayuntamiento de San Bartolomé de Tirajana",
@@ -473,7 +484,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Ayuntamiento de Teror",
@@ -484,7 +495,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Ayuntamiento de Santa Lucía",
@@ -495,7 +506,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Turismo LPA (Ayto)",
@@ -506,7 +517,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "ULPGC (Funcionario TL)",
@@ -517,7 +528,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "ULPGC (Pers. Laboral Fijo)",
@@ -528,7 +539,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": true,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Audiencia de Cuentas de Canarias",
@@ -539,7 +550,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Puertos de Las Palmas",
@@ -550,7 +561,7 @@
       "http_status": 0,
       "estado_rastreo": "error",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Valora Gestión Tributaria",
@@ -561,7 +572,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "AEAT (Agencia Tributaria)",
@@ -571,8 +582,8 @@
       "ficha": "—",
       "http_status": 200,
       "estado_rastreo": "ok",
-      "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "cambio_detectado": true,
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     },
     {
       "nombre": "Boletín Estatal (PAG)",
@@ -583,7 +594,7 @@
       "http_status": 200,
       "estado_rastreo": "ok",
       "cambio_detectado": false,
-      "ultima_comprobacion": "2026-11-18T17:12:35Z"
+      "ultima_comprobacion": "2026-11-19T22:51:37Z"
     }
   ],
   "reglas_entrenamiento_url": "TRAINING_RULES.md"
