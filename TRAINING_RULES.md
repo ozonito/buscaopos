@@ -22,4 +22,4 @@ El script diario (`scripts/track.py`) inyecta estas reglas en el análisis con I
 - **2026-11-17 · Google Calendar para exámenes**: Si se estima o convoca una fecha de examen, crear una tarea/evento de día completo en Google Calendar con al menos dos semanas de antelación que dure las dos semanas previas al examen para verlo todos los días, incluyendo en el título la hora del llamamiento.
 - **2026-11-17 · Tema oscuro siempre**: El dashboard web debe mostrarse siempre en tema oscuro.
 - **2026-11-17 · Frecuencia mensual en lista de reserva**: Si un proceso está suspendido y solo queda a la espera de la lista de reserva (`solo_lista_reserva: true`), reducir su comprobación web a una frecuencia **mensual** (cada 30 días).
-
+- **2026-11-20 · Fallo o mejora detectada**: hay que añadir una ficha nueva con este nuevo proceso: https://www3.gobiernodecanarias.org/tributos/atc/w/gestores-tributarios-grupo-a-subgrupo-a2-ope-2024?ida=136410625&prnt=992-1014-768-1656
